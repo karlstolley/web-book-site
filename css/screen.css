@@ -209,6 +209,26 @@ div.chapter {
   margin-bottom: 2em; 
 }
 
+form#heydere ul li {
+  list-style-type: none;
+  margin-left: 0;
+}
+form#heydere label {
+  display: block;
+}
+input#swde,
+textarea#swdm { 
+  width: 472px;
+  padding: 10px;
+  border: 1px solid black;
+  margin-bottom: 1em;
+  background-color: #DDD;
+}
+input#swde:focus,
+textarea#swdm:focus {
+  background-color: #FFF;
+}
+
 div#supporting {
   clear: both;
 }

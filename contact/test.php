@@ -52,9 +52,9 @@ swdb_header($swdbpage);
               $displayForm=false;
       ?>
       <p>
-        Your message was successfully sent.
+        Your message was sent just fine. I'll respond to you as soon as I can. Thanks!
+        <br />—Karl
         <!--In addition, a confirmation copy was sent to your e-mail address.-->
-        Your message is shown below.
       </p>
       <?php
               echo '<p>'.htmlspecialchars($body).'</p>';
@@ -85,13 +85,13 @@ swdb_header($swdbpage);
         }
         if ($displayForm){
       ?>
-      <form action="/book/contact/test.php" method="post">
+      <form id="heydere" action="/book/contact/test.php" method="post">
         <ul>
           <li><label for="swde">Your e-mail address:</label>
               <input type="text" name="swde" id="swde" value="<?php echo htmlspecialchars($email); ?>" size="30" />
           </li>
-          <li><label for="swdm">Your message:</label>
-              <textarea name="swdm" id="swdm" cols="60" rows="5"><?php echo htmlspecialchars($body); ?></textarea>
+          <li><label for="swdm">Your message (make sure you put your name, too):</label>
+              <textarea name="swdm" id="swdm" cols="60" rows="8"><?php echo htmlspecialchars($body); ?></textarea>
           </li>
           <li><input type="submit" value="Send Message" /></li>
         </ul>
