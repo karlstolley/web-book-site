@@ -85,7 +85,7 @@ swdb_header($swdbpage);
         }
         if ($displayForm){
       ?>
-      <form id="heydere" action="/book/contact/test.php" method="post">
+      <form id="heydere" action="/book/contact/" method="post">
         <ul>
           <li><label for="swde">Your e-mail address:</label>
               <input type="text" name="swde" id="swde" value="<?php echo htmlspecialchars($email); ?>" size="30" />
