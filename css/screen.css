@@ -166,7 +166,7 @@ div#promo .feature {
 }
 /* Content */
 .home div#content { 
-  background: inherit;
+  background-color: #FFD300;
   padding: 0px;
   border-top: 0px;
 }
