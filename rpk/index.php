@@ -37,18 +37,19 @@ swdb_header($swdbpage);
       </p>
       <ul>
         <li><a href="/book/rpk/rpk.zip">rpk.zip</a>: Basic XHTML version of the RPK used throughout
-        most of the book (see Chapters 9-19)</li> <li><a
-        href="/book/rpk/rpk-php.zip">rpk-php.zip</a>: PHP-based version of the RPK (see Chapter
-        21)</li> <li><a href="/book/rpk/rpk-wp.zip">rpk-wp.zip</a>: WordPress-theme version of the
+        most of the book (see Chapters 9-19)</li>
+        <li><a href="/book/rpk/rpk-php.zip">rpk-php.zip</a>: PHP-based version of the RPK (see
+        Chapter 21)</li>
+        <li><a href="/book/rpk/rpk-wp.zip">rpk-wp.zip</a>: WordPress-theme version of the
         RPK for use with WordPress version 3.1 (see Chapter 22)</li>
       </ul>
       <p>
         Each of those versions of the RPK includes version 1.5.1 of <a
         href="http://jquery.com">jQuery</a> and <a
         href="http://code.google.com/p/swfobject/">SWFObject</a> version 2.2. Consider upgrading
-        those as new versions are released. Test your site locally using <a
-        href="http://www.apachefriends.org/en/xampp.html">XAMPP</a> before uploading to your live
-        site to make sure that everything works.
+        those as new versions are released. Test your site locally using 
+        <a href="http://www.apachefriends.org/en/xampp.html">XAMPP</a> before uploading to
+        your live site to make sure that everything works.
       </p>
       <h2>Other Download Options</h2>
       <p>
