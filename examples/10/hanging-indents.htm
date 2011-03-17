@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Hanging Indents</title>
+	
+	<style type="text/css" media="screen">
+	p.reference { 
+		text-indent: -50px;
+		padding-left: 50px; 
+	}
+	</style>
+</head>
+
+<body>
+
+<div id="container">
+			
+	<div id="content">
+	
+		<div id="main">
+			<h2>Hanging Indents</h2>
+			
+			<p>
+				To create the effect of a hanging indent, as you might see on a
+				resume item or a works cited page or reference list, you just use 
+				a negative text indent value with the same, but positive value on
+				the left padding value:
+			</p>
+			<pre><code>p.reference {
+  text-indent: -50px; /*Negative indent*/
+  padding-left: 50px; /*Push the text back in an equal amount*/
+}<code>
+			</pre>
+			<p>(Normally, though, reference lists and
+				resume items would be in lists; the paragraph example is just
+				used here for convenience of illustration.) Any 
+				<code>&lt;p class="reference"&gt;</code> would display something
+				like:
+			</p>
+			<p class="reference">
+				Berners-Lee, Tim, &amp; Fischetti, Mark. (2000). <cite>Weaving the Web:
+				The original design and ultimate destiny of the World Wide Web</cite>.
+				New York: HarperBusiness.
+			</p>
+		</div>
+		
+	</div>
+
+</div>
+
+</body>
+
+</html>
+

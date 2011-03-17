@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Descendant Selectors</title>
+  <style type="text/css" media="screen">
+  
+  /*The example at hand:*/
+  ul#navigation a { text-decoration: none; }
+  
+  
+  /*Other styles for this example...*/
+  /*Positioning on the navigation*/
+  ul#navigation { 
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 200px;
+  }
+  /*Normally, this would be handled by the reset CSS:*/
+  ul#navigation,
+  ul#navigation li { 
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+  }
+  /*Some extra style enhancements*/
+  ul#navigation li a { 
+    display: block; 
+    background-color: #CCC; 
+    padding: 10px; 
+  }
+  /*Move content over to make room for the navigation*/
+  div#content { margin-right: 220px; }
+
+  </style>
+</head>
+
+<body>
+
+<div id="page">
+      
+  <div id="content">
+  
+    <div id="main">
+      <h2>Descendant Selectors</h2>
+      
+      <p>
+        Descendant selectors in CSS let you style page elements based on
+        their structural relationship. The <a href="#links">links</a> in
+        <a href="#links">this paragraph</a> all have 
+        <a href="#links">their default underlining</a>. The links in the
+        navigation at the left (Home, About, and Contact) are not
+        underlined, thanks to the CSS style on this page that reads
+        <code>ul#navigation a { text-decoration: none; }</code>.        
+      </p>
+      
+    </div>
+    
+  </div>
+  
+  <ul id="navigation">
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+</div>
+
+</body>
+
+</html>
+

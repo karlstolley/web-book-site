@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Child Selectors</title>
+  
+  <style type="text/css" media="screen">
+  ul.colors > li { list-style-type: none; }
+  </style>
+</head>
+
+<body>
+
+<div id="page">
+      
+  <div id="content">
+  
+    <div id="main">
+      <h2>Child Selectors on Nested Lists</h2>
+      
+      <p>
+        A child selector hits only the children of a parent element. In this example, there is an
+        undordered list with a class of <code>color</code>, e.g., 
+        <code>&lt;ul class="colors"&gt;</code>, with the primary colors as its children, each with
+        a nested list of synonyms.
+      </p>
+      <p>
+        Using the child selector of <code>ul.colors > li { list-style-type: none; }</code>, the
+        primary colors will have no bullet points next to them, but the synonyms will still have
+        bullet points:
+      </p>
+      
+      <ul class="colors">
+        <li>Red
+          <ul>
+            <li>Crimson</li>
+            <li>Scarlet</li>
+          </ul>
+        </li>
+        <li>Yellow
+          <ul>
+            <li>Lemon</li>
+            <li>Gold</li>
+          </ul>
+        </li>
+        <li>Blue
+          <ul>
+            <li>Navy</li>
+            <li>Cobalt</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+
+</div>
+
+</body>
+
+</html>
+
