@@ -57,7 +57,7 @@ swdb_header($swdbpage);
         <!--In addition, a confirmation copy was sent to your e-mail address.-->
       </p>
       <?php
-              echo '<p>'.htmlspecialchars($body).'</p>';
+              /*echo '<p>'.htmlspecialchars($body).'</p>';*/
             }else{ // the messages could not be sent
       ?>
       <p>
