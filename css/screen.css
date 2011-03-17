@@ -30,12 +30,7 @@ body {
 
 h1,h2,h3,h4,h5,h6,ul.accessibility,ul#navigation { font-family: "Lucida Grande", Tahoma, Helvetica, Arial, sans-serif; }
 h2,h3 { margin-bottom: .5em; }
-h3 { 
-  background: #222;
-  color: #FFF;
-  padding: 10px;
-  line-height: 1;
-}
+
 li h2, .feature h2 { text-align: center; }
 
 div.feature h2 a { 
@@ -204,9 +199,11 @@ div#main ul.feature > li {
 div#main ul.feature > li.updates {
   margin-right: 0px;
 }
-.resources div#main h2,
 .examples div#main h2 {
-
+  background: #222;
+  color: #FFF;
+  padding: 10px;
+  line-height: 1;
 }
 
 div.chapter { 
