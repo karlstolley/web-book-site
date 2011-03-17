@@ -253,9 +253,9 @@ swdb_header($swdbpage);
         <div class="chapter">
         <h4>Downloads and Utilities</h4>
         <ul>
-          <li><a href="">Yahoo! Media Player</a> (Audio player)</li>
-          <li><a href="">WordPress Audio Player</a> (Audio player)</li>
-          <li><a href="">1 Bit Audio Player</a> (Audio player)</li>
+          <li><a href="http://mediaplayer.yahoo.com/">Yahoo! Media Player</a> (Audio player)</li>
+          <li><a href="http://wpaudioplayer.com/">WordPress Audio Player</a> (Audio player)</li>
+          <li><a href="http://1bit.markwheeler.net/">1 Bit Audio Player</a> (Audio player)</li>
           <li><a href="http://code.google.com/p/swfobject/">SWFObject</a> (Standards-compliant Flash media loader)</li>
         </ul>
         <h4>Websites</h4>
@@ -293,7 +293,7 @@ swdb_header($swdbpage);
         </ul>
         <h4>Websites</h4>
         <ul>
-          <li><a href="">XAMPP</a> (Development Web server documentation)</li>
+          <li><a href="http://www.apachefriends.org/en/faq-xampp.html">XAMPP</a> (Development Web server documentation)</li>
         </ul>
         </div>
       <h3>Chapter 21: Reusing and Dynamically Generating Content</h3>
