@@ -139,9 +139,7 @@ div#promo .feature {
   color: #FFF;
 }
 div#promo .feature p { line-height: 1.4; }
-div#promo .feature {
- -moz-border-radius: 10px;
-}
+
 .feature .featured a {
   display: block;
   background: #C00;

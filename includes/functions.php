@@ -12,6 +12,7 @@ echo
 
   <link rel="stylesheet" type="text/css" media="screen, print" href="/book/css/reset.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="/book/css/screen.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/book/css/edge.css" />
   <!--[if lte IE 7>
   <link rel="stylesheet" type="text/css" media="screen" href="/book/css/screen-ie.css" />
   <![endif]-->
