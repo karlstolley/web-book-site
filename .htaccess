@@ -1,0 +1,7 @@
+AddType application/x-httpd-php .php
+
+RewriteEngine on
+RewriteRule ^screenshots(/)?$ /book/examples/ [R]
+RewriteRule ^screenshots/descendant-selectors.htm$ /book/examples/10/descendant-selectors.htm [R]
+RewriteRule ^screenshots/child-selectors.htm$ /book/examples/10/child-selectors.htm [R]
+RewriteRule ^screenshots/hanging-indent(s)?.htm$ /book/examples/10/hanging-indents.htm [R]
