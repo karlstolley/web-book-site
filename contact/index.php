@@ -31,7 +31,7 @@ swdb_header($swdbpage);
   <div id="content">
 
     <div id="main">
-      <h2>Who Doesn't Like a Nice Email?</h2>
+      <h2>Who Doesn’t Like a Nice Email?</h2>
       <?php
         /*Form functionality based on http://safalra.com/programming/php/contact-feedback-form/*/
         $to='karl.stolley@gmail.com';

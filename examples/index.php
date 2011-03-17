@@ -223,7 +223,7 @@ swdb_header($swdbpage);
         <div class="chapter">
         <h4>Websites</h4>
         <ul>
-          <li><a href="http://www.mezzoblue.com/tests/revised-image-replacement/">Revised Image Replacement</a> (Dave Shea’s gallery of CSS image-replaement techniques)</li>
+          <li><a href="http://www.mezzoblue.com/tests/revised-image-replacement/">Revised Image Replacement</a> (Dave Shea’s gallery of CSS image-replacement techniques)</li>
           <li><a href="http://validator.w3.org">W3C Markup Validation Service</a> (XHTML/HTML validator)</li>
           <li><a href="http://jigsaw.w3.org/cssvalidator/">W3C CSS Validation Service</a> (CSS validator)</li>
           <li><a href="http://creativecommons.org">Creative Commons</a> (Content licensing)</li>

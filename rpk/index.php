@@ -16,7 +16,7 @@ swdb_header($swdbpage);
     <div class="summary">
       <h2>Rapid Prototyping Kit (RPK)</h2>
       <p>
-        The Rapid Prototypting Kit is a set of starter files and folders to get your site built quickly according to Web standards and best practices.
+        The Rapid Prototyping Kit is a set of starter files and folders to get your site built quickly according to Web standards and best practices.
       </p>
     </div>
     <!--
@@ -59,7 +59,7 @@ swdb_header($swdbpage);
       </p>
         <ul>
           <li>The DOCTYPE declaration is <code>&lt;!DOCTYPE html&gt;</code></li>
-          <li>The <code>&lt;html&gt;</code> tag is simplfied to  <code>&lt;html lang="en" id="example-com"&gt;</code></li>
+          <li>The <code>&lt;html&gt;</code> tag is simplified to  <code>&lt;html lang="en" id="example-com"&gt;</code></li>
           <li>The UTF-8 character set is specified via the new <code>&lt;meta charset="utf-8" /&gt;</code> syntax</li>
           <li>The validator link in the footer refers to HTML5</li>
         </ul>

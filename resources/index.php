@@ -139,7 +139,7 @@ swdb_header($swdbpage);
 
       <h2>Design Approaches and Techniques</h2>
       <ul>
-        <li><a href="http://www.mezzoblue.com/tests/revised-image-replacement/">Revised Image Replacement</a> (Dave Shea’s gallery of CSS image-replaement techniques)</li>
+        <li><a href="http://www.mezzoblue.com/tests/revised-image-replacement/">Revised Image Replacement</a> (Dave Shea’s gallery of CSS image-replacement techniques)</li>
         <li><a href="http://960.gs">960 Grid System</a> (Layout approaches)</li>
         <li><a href="http://978.gs">978 Grid System</a> (Layout approaches)</li>
         <li><a href="http://www.quirksmode.org/css/condcom.html">Quirksmode.org Conditional Comments</a> (Internet Explorer work-arounds)</li>
