@@ -105,7 +105,15 @@ swdb_header($swdbpage);
         <ul>
           <li><a href="http://portableapps.com">PortableApps.com</a> (Free and open-source Windows applications that can be run on a USB drive)</li>
           <li><a href="http://www.freesmug.org/portableapps/">FreeSMUG.org</a> (Free and open-source Mac OS X applications that can be run on a USB drive)</li>
-          <li><a href="http://notepad-plus-plus.org/">Notepad++ (“Notepad plus”)</a> (Recommended free text editor for Windows; can be run from USB drive)</li>
+          <li><a href="http://notepad-plus-plus.org/">Notepad++ (“Notepad plus”)</a> (Recommended free text editor for Windows; can be run from USB drive)
+          <p>
+            Download the <strong>zip package</strong> of Notepad++ (not the installer);
+            when you unzip it, there will be two folders: <code>ansi</code> and <code>unicode</code>. Throw the <code>ansi</code> folder away, and move
+            the <code>unicode</code> folder to your desktop or USB drive. The 
+            <code>Notepad++</code> program is inside of the <code>unicode</code> folder
+            (you can rename <code>unicode</code> to <code>notepad++</code> if you wish).
+          </p>
+          </li>
           <li><a href="http://www.barebones.com/products/textwrangler/">TextWrangler</a> (Recommended free text editor for Mac OS X; also <a href="http://itunes.apple.com/us/app/textwrangler/id404010395?mt=12">available via the Mac App Store</a>)</li>
           <li><a href="http://winscp.net/">WinSCP</a> (Recommended free and open-source FTP/SFTP client for Windows)</li>
           <li><a href="http://cyberduck.ch/">Cyberduck</a> (Recommended free and open-source FTP/SFTP client for Mac OS X</li>
