@@ -28,6 +28,41 @@ swdb_header($swdbpage);
   <div id="content">
 
     <div id="main">
+      <div id="essentials">
+      <h2>The Essentials</h2>
+      <p>Bookmark these websites; you’ll need them:</p>
+      <ul>
+        <li><a href="http://htmldog.com/reference/htmltags/">HTML Dog HTML Tag Reference</a></li>
+        <li><a href="http://reference.sitepoint.com/html">SitePoint HTML Reference</a></li>
+        <li><a href="http://htmldog.com/reference/cssproperties/">HTML Dog CSS Properties</a></li>
+        <li><a href="http://reference.sitepoint.com/css">SitePoint CSS Reference</a></li>
+        <li><a href="http://validator.w3.org">W3C Markup Validation Service</a> (XHTML/HTML validator)</li>
+        <li><a href="http://jigsaw.w3.org/cssvalidator/">W3C CSS Validation Service</a> (CSS validator)</li>
+      </ul>
+      <p><strong>Mac OS X users</strong> should download and install these:</p>
+      <ul>
+        <li><a href="http://www.barebones.com/products/textwrangler/">TextWrangler</a> (Text editor; also <a href="http://itunes.apple.com/us/app/textwrangler/id404010395?mt=12">available via the Mac App Store</a>)</li>
+        <li><a href="http://www.mozilla.com/firefox">Mozilla Firefox</a> (Open-source Web browser)</li>
+        <li><a href="https://addons.mozilla.org/firefox/addon/60">Chris Pederick’s Web Developer Add-on for Firefox</a> (Firefox add-on; install from within Firefox)</li>
+        <li><a href="http://www.apachefriends.org/en/xampp-macosx.html">XAMPP for Mac OS X</a> (Development Web server)</li>
+      </ul>
+      <p><strong>Windows users</strong> should download and install these:</p>
+      <ul>
+        <li><a href="http://notepad-plus-plus.org/">Notepad++ (“Notepad plus”)</a> (Text editor; download the zip package; run the version in the <code>unicode</code> folder)</li>
+        <li><a href="http://www.mozilla.com/firefox">Mozilla Firefox</a> (Open-source Web browser)</li>
+        <li><a href="https://addons.mozilla.org/firefox/addon/60">Chris Pederick’s Web Developer Add-on for Firefox</a> (Firefox add-on; install from within Firefox)</li>
+        <li><a href="http://www.apachefriends.org/en/xampp-windows.html">XAMPP for Windows</a> (Development Web server)</li>
+      </ul>
+      <p><strong>Windows users running USB drives</strong> should download and install these:</p>
+      <ul>
+        <li><a href="http://notepad-plus-plus.org/">Notepad++ (“Notepad plus”)</a> (Text editor; download the zip package; run the version in the <code>unicode</code> folder)</li>
+        <li><a href="http://portableapps.com/apps/internet/firefox_portable">Mozilla Firefox, Portable Edition</a> (Open-source Web browser)</li>
+        <li><a href="https://addons.mozilla.org/firefox/addon/60">Chris Pederick’s Web Developer Add-on for Firefox</a> (Firefox add-on; install from within Firefox)</li>
+        <li><a href="http://www.apachefriends.org/en/xampp-windows.html">XAMPP for Windows</a> (Development Web server)</li>
+      </ul>
+      </div>
+    
+    
       <h2>Part I. What Am I Writing?</h2>
 
       <div id="part-i">
@@ -64,10 +99,6 @@ swdb_header($swdbpage);
             <li><a href="http://expression.microsoft.com/en-us/dd565874.aspx">Microsoft Expression Web SuperPreview</a> (Internet Explorer testing; requires Windows/IE8)</li>
             <li><a href="http://home.pacific.net.sg/~kennethkwok/lynx/">Lynx for Windows</a> (Text-only Web browser)</li>
             <li><a href="http://www.apple.com/downloads/macosx/unix_open_source/lynxtextwebbrowser.html">Lynx for Mac OS X</a> (Text-only Web browser)</li>
-          </ul>
-          <h4>Websites</h4>
-          <ul>
-            <li>OLD WEBSITES OF MINE MENTIONED IN THE CHAPTER?</li>
           </ul>
         </div>
       <h3>Chapter 3: Creating Web Content</h3>
