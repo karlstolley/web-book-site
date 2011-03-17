@@ -29,7 +29,6 @@ swdb_header($swdbpage);
 
     <div id="main">
       <!--NB: Glossary mentions additional terms to be found on the companion site-->
-      <!--<?php gist_embed('710872'); ?>-->
       <h2>Part I. What Am I Writing?</h2>
       <div id="part-i">
       <h3>Chapter 1: Why Write for the Web?</h3>
@@ -160,7 +159,7 @@ swdb_header($swdbpage);
         </ul>
         <h4>Examples</h4>
           <ul>
-            <li>XHTML Strict DOCTYPE (p. 94) <?php gist_embed('873482'); ?></li>
+            <li>XHTML Strict DOCTYPE (p. 94)</li>
           </ul>
         </div>
       <h3>Chapter 10: Presentation and Design: CSS Overview</h3>
