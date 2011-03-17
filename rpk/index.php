@@ -55,10 +55,18 @@ swdb_header($swdbpage);
       <p>
         Adventurous writer/designers can download <a
         href="/book/rpk/rpk-html5.zip">rpk-html5.zip</a>, which is an HTML5 version of the RPK.
-        However, it only changes the DOCTYPE declaration to <code>&lt;!DOCTYPE html&gt;</code> and
-        uses the shorter <code>&lt;meta charset="utf-8" /&gt;</code> to specify the Unicode
-        character set. Everything else is essentially the same (in that version) as the basic XHTML
-        version of the RPK.
+        The only differences from the XHTML version of the RPK are:
+      </p>
+        <ul>
+          <li>The DOCTYPE declaration is <code>&lt;!DOCTYPE html&gt;</code></li>
+          <li>The <code>&lt;html&gt;</code> tag is simplfied to  <code>&lt;html lang="en" id="example-com"&gt;</code>
+          <li>The UTF-8 character set is specified via the new <code>&lt;meta charset="utf-8" /&gt;</code> syntax</li>
+          <li>The validator link in the footer refers to HTML5</li>
+        </ul>
+      <p>
+        Everything else is essentially the same in the HTML5 version as the basic XHTML version of
+        the RPK, meaning that your CSS and JavaScript developed with the XHTML version should work
+        seamlessly with it.
       </p>
       <p>
         For even more adventurous writers/designers, you can <a
