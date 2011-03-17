@@ -59,7 +59,7 @@ swdb_header($swdbpage);
       </p>
         <ul>
           <li>The DOCTYPE declaration is <code>&lt;!DOCTYPE html&gt;</code></li>
-          <li>The <code>&lt;html&gt;</code> tag is simplfied to  <code>&lt;html lang="en" id="example-com"&gt;</code>
+          <li>The <code>&lt;html&gt;</code> tag is simplfied to  <code>&lt;html lang="en" id="example-com"&gt;</code></li>
           <li>The UTF-8 character set is specified via the new <code>&lt;meta charset="utf-8" /&gt;</code> syntax</li>
           <li>The validator link in the footer refers to HTML5</li>
         </ul>
