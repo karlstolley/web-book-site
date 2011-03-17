@@ -33,6 +33,7 @@ swdb_header($swdbpage);
     <div id="main">
       <h2>Who Doesn't Like a Nice Email?</h2>
       <?php
+        /*Form functionality based on http://safalra.com/programming/php/contact-feedback-form/*/
         $to='karl.stolley@gmail.com';
         $messageSubject='[SWD/Book] A Message about How to Design and Write Web Pages Today';
         /*$confirmationSubject='Confirmation message subject';
