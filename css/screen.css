@@ -173,6 +173,12 @@ div#content {
   padding: 64px 0px;
   border-top: 5px solid #696969;
 }
+div#essentials {
+  border: 1px solid #BBB;
+  background-color: #F6F6F6;
+  padding: 10px;
+  margin-bottom: 2em;
+}
 div#content p,
 div#content ul,
 div#content ol {
