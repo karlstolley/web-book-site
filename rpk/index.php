@@ -40,7 +40,7 @@ swdb_header($swdbpage);
         most of the book (see Chapters 9-19)</li>
         <li><a href="/book/rpk/rpk-php.zip">rpk-php.zip</a>: PHP-based version of the RPK (see
         Chapter 21)</li>
-        <li><a href="/book/rpk/rpk-wp.zip">rpk-wp.zip</a>: WordPress-theme version of the
+        <li>Coming soon: <a href="/book/rpk/#rpk-wp.zip">rpk-wp.zip</a>: WordPress-theme version of the
         RPK for use with WordPress version 3.1 (see Chapter 22)</li>
       </ul>
       <p>
