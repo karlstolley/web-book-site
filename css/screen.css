@@ -262,11 +262,14 @@ div#footer p.credits {
 }
 div#footer ul.validators {
   text-align: right;
-
 }
 div#footer ul.validators li {
   display: inline;
   padding-left: .25em;
+}
+
+div#footer a {
+  color: #08A;
 }
 
 /*Navigation*/
