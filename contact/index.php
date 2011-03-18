@@ -16,10 +16,9 @@ swdb_header($swdbpage);
     <div class="summary">
       <h2>Contact the Author</h2>
       <p>
-        You can contact Karl by sending an @reply on Twitter to 
+        You can contact Karl by sending an @message on Twitter to
         <a href="http://twitter.com/karlstolley">@karlstolley</a> or by liking or writing on the wall for the
-        <cite><a href="https://www.facebook.com/pages/How-to-Design-and-Write-Web-Pages-Today/145726625482580">How to Design and Write Web Pages Today</a></cite>
-        page on Facebook. Or just use the email form below.
+       <a href="https://www.facebook.com/stolley.web.book">Facebook page for <cite>How to Design and Write Web Pages Today</cite></a>. Or just use the email form below.
       </p>
     </div>
     <!--
