@@ -153,8 +153,18 @@ swdb_header($swdbpage);
             <li>XHTML Strict DOCTYPE (p. 94):
             <pre class="prettyprint">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</pre>
             </li>
-            <li>Content Type and Character Encoding <code>&lt;meta /&gt;</code> Tag (p. 95):
+            <li>The Global Structure of Web Pages (p. 96):
+            <pre class="prettyprint">&lt;html&gt;&#10;  &lt;head&gt;&#10;  &lt;/head&gt;&#10;  &lt;body&gt;&#10;  &lt;/body&gt;&#10;&lt;/html&gt;</pre>
+            
+            </li>
+            <li>Content Type and Character Encoding <code class="prettyprint">&lt;meta /&gt;</code> Tag (p. 97):
             <pre class="prettyprint">&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;</pre>
+            </li>
+            <li>Uniquely Identifying Pieces of Structure with <code class="prettyprint">id</code> (p. 98-99):
+            <pre class="prettyprint">&lt;body&gt;&#10;  <strong>&lt;div id=&quot;header&quot;&gt;</strong>&#10;    &lt;h1&gt;John Smith&#39;s Home Page&lt;/h1&gt;&#10;  <strong>&lt;/div&gt;</strong>&#10;  <strong>&lt;div id=&quot;content&gt;</strong>&#10;    &lt;h2&gt;Portfolio Overview&lt;/h2&gt;&#10;    &lt;p&gt;Read all about &lt;a href=&quot;portfolio.htm&quot;&gt;my portfolio&lt;/a&gt;...&lt;/p&gt;&#10;    &lt;h2&gt;Latest Projects&lt;/h2&gt;&#10;    &lt;p&gt;Read all about my &lt;a href=&quot;latest-projects.htm&quot;&gt; latest projects&lt;/a&gt;...&lt;/p&gt;&#10;  <strong>&lt;/div&gt;</strong>&#10;  &lt;ul <strong>id=&quot;navigation&quot;</strong>&gt;&#10;    &lt;li&gt;&lt;a href=&quot;index.htm&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li&gt;&lt;a href=&quot;resume.htm&quot;&gt;Resume&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li&gt;&lt;a href=&quot;contact.htm&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;&#10;  &lt;/ul&gt;&#10;  <strong>&lt;div id=&quot;footer&quot;&gt;</strong>&#10;    &lt;p&gt;&#10;      All site content is licensed for use under a&#10;      &lt;a rel=&quot;license&quot; href= &quot;http://creativecommons.org/licenses/by/3.0/us/&quot;&gt;&#10;      Creative Commons Attribution 3.0 United States License&lt;/a&gt;.&#10;    &lt;/p&gt;&#10;  <strong>&lt;/div&gt;</strong>&#10;&lt;/body&gt;</pre>
+            </li>
+            <li>Associating Similar, Repeated Structures with <code class="prettyprint">class</code> (p. 100):
+            <pre class="prettyprint">&lt;p&gt;&#10;  I enjoyed Peter Jackson&#39;s &lt;cite <strong>class=&quot;film&quot;</strong>&gt;Lord of the Rings&lt;/cite&gt;&#10;  films, especially &lt;cite <strong>class=&quot;film&quot;</strong>&gt;The Two Towers&lt;/cite&gt;, but I do&#10;  not think that they were as good as the original &#10;  &lt;cite <strong>class=&quot;book&quot;</strong>&gt;Lord of the Rings&lt;/cite&gt; books by J. R. R. Tolkien.&#10;&lt;/p&gt;</pre>
             </li>
           </ul>
         </div>
