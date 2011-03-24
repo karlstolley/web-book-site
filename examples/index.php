@@ -64,10 +64,6 @@ swdb_header($swdbpage);
             <li><a href="http://home.pacific.net.sg/~kennethkwok/lynx/">Lynx for Windows</a> (Text-only Web browser)</li>
             <li><a href="http://www.apple.com/downloads/macosx/unix_open_source/lynxtextwebbrowser.html">Lynx for Mac OS X</a> (Text-only Web browser)</li>
           </ul>
-          <h3>Websites</h3>
-          <ul>
-            <li>OLD WEBSITES OF MINE MENTIONED IN THE CHAPTER?</li>
-          </ul>
         </div>
       <h2>Chapter 3: Creating Web Content</h2>
         <div class="chapter">
@@ -154,7 +150,12 @@ swdb_header($swdbpage);
         </ul>
         <h3>Examples</h3>
           <ul>
-            <li>XHTML Strict DOCTYPE (p. 94)</li>
+            <li>XHTML Strict DOCTYPE (p. 94):
+            <pre class="prettyprint">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</pre>
+            </li>
+            <li>Content Type and Character Encoding <code>&lt;meta /&gt;</code> Tag (p. 95):
+            <pre class="prettyprint">&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;</pre>
+            </li>
           </ul>
         </div>
       <h2>Chapter 10: Presentation and Design: CSS Overview</h2>
@@ -212,6 +213,13 @@ swdb_header($swdbpage);
         <ul>
           <li><a href="http://webaim.org/techniques/screenreader/">“Designing for Screen Reader Compatibility”</a> (WebAIM article)</li>
           <li><a href="http://www.webmaster-toolkit.com/mime-types.shtml">MIME Types List</a> (Webmaster Toolkit reference)</li>
+        </ul>
+        <h3>Examples</h3>
+        <ul>
+          <li>Mismatched Character Encoding (p. 149)</li>
+          <li>Correct Character Encoding (p. 150)</li>
+          <li>Title Bar Example (p. 152)</li>
+          
         </ul>
         </div>
       <h2>Chapter 14: Page Branding</h2>

@@ -34,7 +34,8 @@ echo
 <!--
   <link rel="shortcut icon" href="http://example.com/favicon.ico" />
 -->
-
+  <!--Load the Google Prettify library-->
+  <script type="text/javascript" src="/book/js/prettify.js"></script>
   <!--Load the jQuery library-->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
   <!--Load the Snippet jQuery Syntax Highlighter-->
