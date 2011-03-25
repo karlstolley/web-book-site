@@ -1403,7 +1403,7 @@ window['_pr_isIE6'] = function () {
                      Infinity);
       for (; k < elements.length && clock.now() < endTime; k++) {
         var cs = elements[k];
-        if (cs.className && cs.className.indexOf('prettyprint') >= 0) {
+        if (cs.className && cs.className.indexOf('pp') >= 0) {
           // If the classes includes a language extensions, use it.
           // Language extensions can be specified like
           //     <pre class="prettyprint lang-cpp">
@@ -1417,7 +1417,7 @@ window['_pr_isIE6'] = function () {
           for (var p = cs.parentNode; p; p = p.parentNode) {
             if ((p.tagName === 'pre' || p.tagName === 'code' ||
                  p.tagName === 'xmp') &&
-                p.className && p.className.indexOf('prettyprint') >= 0) {
+                p.className && p.className.indexOf('pp') >= 0) {
               nested = true;
               break;
             }

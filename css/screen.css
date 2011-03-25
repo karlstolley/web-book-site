@@ -382,18 +382,18 @@ div#content a:focus {
 .atn { color: #606; }
 .atv { color: #080; }
 .dec { color: #606; }
-pre.prettyprint {
+pre.pp {
   padding: 10px;
   border: 1px solid #E0E0E0;
   background-color: #F6F6F6;
   margin-top: .5em;
   margin-bottom: 1.5em;
 }
-pre.prettyprint strong * {
+pre.pp strong * {
   background-color: #FF0;
   padding: 5px 0px 2px 0px;
 }
-pre.prettyprint strong.e * {
+pre.pp strong.e * {
   background-color: inherit;
   color: #F00;
 }
