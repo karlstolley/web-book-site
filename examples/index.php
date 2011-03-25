@@ -151,20 +151,20 @@ swdb_header($swdbpage);
         <h3>Examples</h3>
           <ul>
             <li>XHTML Strict DOCTYPE (p. 94):
-            <pre class="prettyprint">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</pre>
+            <pre class="pp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</pre>
             </li>
             <li>The Global Structure of Web Pages (p. 96):
-            <pre class="prettyprint">&lt;html&gt;&#10;  &lt;head&gt;&#10;  &lt;/head&gt;&#10;  &lt;body&gt;&#10;  &lt;/body&gt;&#10;&lt;/html&gt;</pre>
+            <pre class="pp">&lt;html&gt;&#10;  &lt;head&gt;&#10;  &lt;/head&gt;&#10;  &lt;body&gt;&#10;  &lt;/body&gt;&#10;&lt;/html&gt;</pre>
             
             </li>
-            <li>Content Type and Character Encoding <code class="prettyprint">&lt;meta /&gt;</code> Tag (p. 97):
-            <pre class="prettyprint">&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;</pre>
+            <li>Content Type and Character Encoding <code class="pp">&lt;meta /&gt;</code> Tag (p. 97):
+            <pre class="pp">&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;</pre>
             </li>
-            <li>Uniquely Identifying Pieces of Structure with <code class="prettyprint">id</code> (p. 98-99):
-            <pre class="prettyprint">&lt;body&gt;&#10;  <strong>&lt;div id=&quot;header&quot;&gt;</strong>&#10;    &lt;h1&gt;John Smith&#39;s Home Page&lt;/h1&gt;&#10;  <strong>&lt;/div&gt;</strong>&#10;  <strong>&lt;div id=&quot;content&gt;</strong>&#10;    &lt;h2&gt;Portfolio Overview&lt;/h2&gt;&#10;    &lt;p&gt;Read all about &lt;a href=&quot;portfolio.htm&quot;&gt;my portfolio&lt;/a&gt;...&lt;/p&gt;&#10;    &lt;h2&gt;Latest Projects&lt;/h2&gt;&#10;    &lt;p&gt;Read all about my &lt;a href=&quot;latest-projects.htm&quot;&gt; latest projects&lt;/a&gt;...&lt;/p&gt;&#10;  <strong>&lt;/div&gt;</strong>&#10;  &lt;ul <strong>id=&quot;navigation&quot;</strong>&gt;&#10;    &lt;li&gt;&lt;a href=&quot;index.htm&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li&gt;&lt;a href=&quot;resume.htm&quot;&gt;Resume&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li&gt;&lt;a href=&quot;contact.htm&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;&#10;  &lt;/ul&gt;&#10;  <strong>&lt;div id=&quot;footer&quot;&gt;</strong>&#10;    &lt;p&gt;&#10;      All site content is licensed for use under a&#10;      &lt;a rel=&quot;license&quot; href= &quot;http://creativecommons.org/licenses/by/3.0/us/&quot;&gt;&#10;      Creative Commons Attribution 3.0 United States License&lt;/a&gt;.&#10;    &lt;/p&gt;&#10;  <strong>&lt;/div&gt;</strong>&#10;&lt;/body&gt;</pre>
+            <li>Uniquely Identifying Pieces of Structure with <code class="pp">id</code> (p. 98-99):
+            <pre class="pp">&lt;body&gt;&#10;  <strong>&lt;div id=&quot;header&quot;&gt;</strong>&#10;    &lt;h1&gt;John Smith&#39;s Home Page&lt;/h1&gt;&#10;  <strong>&lt;/div&gt;</strong>&#10;  <strong>&lt;div id=&quot;content&gt;</strong>&#10;    &lt;h2&gt;Portfolio Overview&lt;/h2&gt;&#10;    &lt;p&gt;Read all about &lt;a href=&quot;portfolio.htm&quot;&gt;my portfolio&lt;/a&gt;...&lt;/p&gt;&#10;    &lt;h2&gt;Latest Projects&lt;/h2&gt;&#10;    &lt;p&gt;Read all about my &lt;a href=&quot;latest-projects.htm&quot;&gt; latest projects&lt;/a&gt;...&lt;/p&gt;&#10;  <strong>&lt;/div&gt;</strong>&#10;  &lt;ul <strong>id=&quot;navigation&quot;</strong>&gt;&#10;    &lt;li&gt;&lt;a href=&quot;index.htm&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li&gt;&lt;a href=&quot;resume.htm&quot;&gt;Resume&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li&gt;&lt;a href=&quot;contact.htm&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;&#10;  &lt;/ul&gt;&#10;  <strong>&lt;div id=&quot;footer&quot;&gt;</strong>&#10;    &lt;p&gt;&#10;      All site content is licensed for use under a&#10;      &lt;a rel=&quot;license&quot; href= &quot;http://creativecommons.org/licenses/by/3.0/us/&quot;&gt;&#10;      Creative Commons Attribution 3.0 United States License&lt;/a&gt;.&#10;    &lt;/p&gt;&#10;  <strong>&lt;/div&gt;</strong>&#10;&lt;/body&gt;</pre>
             </li>
-            <li>Associating Similar, Repeated Structures with <code class="prettyprint">class</code> (p. 100):
-            <pre class="prettyprint">&lt;p&gt;&#10;  I enjoyed Peter Jackson&#39;s &lt;cite <strong>class=&quot;film&quot;</strong>&gt;Lord of the Rings&lt;/cite&gt;&#10;  films, especially &lt;cite <strong>class=&quot;film&quot;</strong>&gt;The Two Towers&lt;/cite&gt;, but I do&#10;  not think that they were as good as the original &#10;  &lt;cite <strong>class=&quot;book&quot;</strong>&gt;Lord of the Rings&lt;/cite&gt; books by J. R. R. Tolkien.&#10;&lt;/p&gt;</pre>
+            <li>Associating Similar, Repeated Structures with <code class="pp">class</code> (p. 100):
+            <pre class="pp">&lt;p&gt;&#10;  I enjoyed Peter Jackson&#39;s &lt;cite <strong>class=&quot;film&quot;</strong>&gt;Lord of the Rings&lt;/cite&gt;&#10;  films, especially &lt;cite <strong>class=&quot;film&quot;</strong>&gt;The Two Towers&lt;/cite&gt;, but I do&#10;  not think that they were as good as the original &#10;  &lt;cite <strong>class=&quot;book&quot;</strong>&gt;Lord of the Rings&lt;/cite&gt; books by J. R. R. Tolkien.&#10;&lt;/p&gt;</pre>
             </li>
           </ul>
         </div>
@@ -180,6 +180,20 @@ swdb_header($swdbpage);
         <ul>
           <li><a href="/book/examples/10/xhtml-sample.htm">A Sample of XHTML</a> (p. 104)</li>
           <li><a href="/book/examples/10/xhtml-css-sample.htm">A Sample of XHTML with a Cascade</a> (p. 104)</li>
+          <li>CSS Style Declarations (p. 105)
+          <pre class="pp lang-css">/*Pseudo-code to show selectors, properties, and values in CSS*/
+selector {
+  property: value;                /*For styles that take a single value, e.g.,
+                                    color: blue;
+                                  */
+  property: value, value, value;  /*Commas separate values ordered by preference, e.g., 
+                                    font-family: Verdana, Arial, sans-serif;
+                                  */
+  property: value value value;    /*For styles that take multiple values, e.g.,
+                                    border: 10px solid red;
+                                  */
+}</pre>
+          </li>
           <li><a href="/book/examples/10/descendant-selectors.htm">Descendant Selectors</a> (p. 108)</li>
           <li><a href="/book/examples/10/child-selectors.htm">Child Selectors on Nested Lists</a> (p. 110)</li>
           <li><a href="/book/examples/10/hanging-indents.htm">Hanging Indents</a> (p. 115)</li>
@@ -215,7 +229,47 @@ swdb_header($swdbpage);
           <li><a href="/book/examples/12/views/">One Page, Many Views</a> (p. 134-137)</li>
           <li><a href="/book/examples/12/views/highlighting-error.htm">Highlighting Error</a> (p. 137)</li>
           <li><a href="/book/examples/12/source-formatting.htm">Format Source However You'd Like</a> (p. 138-142)</li>
-        </ul>
+          <li>Indentation: XHTML (p. 141):
+          <pre class="pp">&lt;div class=&quot;tip&quot;&gt;&#10;  &lt;h2&gt;Indentation Makes Source Readable&lt;/h2&gt;&#10;  &lt;p&gt;&#10;      However, some text editors require you to&#10;      do your indentation manually.&#10;  &lt;/p&gt;&#10;&lt;/div&gt;</pre>
+          </li>
+          <li>Indentation: CSS (p. 141):
+          <pre class="pp lang-css">/*
+  Put properties on separate lines, 
+  and indent them within a selector:
+*/
+body { 
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: small;
+}
+
+/*
+  Some designers indent selectors to show
+  which selectors appear inside of others:
+*/
+div#content { width: 500px; }
+  div#content h2 { font-size: 26px; }
+  div#content p { font-size: 14px; }
+    div#content p a { color: green; }</pre>
+          </li>
+          <li>Comment syntax in XHTML (p. 143):
+          <pre class="pp"><strong>&lt;!--</strong>Here is a comment in XHTML.<strong>--&gt;</strong></pre>
+          </li>
+          <li>Comment syntax in CSS (p. 143):
+          <pre class="pp lang-css"><strong>/*</strong>Here is a comment in CSS.<strong>*/</strong></pre>
+          </li>
+          <li>Comment syntax in JavaScript (p. 143):
+          <pre class="pp lang-js"><strong>/*</strong>Here is a comment in JavaScript.<strong>*/</strong></pre>
+          </li>
+          <li>Commenting Out Problem Code (p. 145):
+          <pre class="pp lang-css">p { 
+  width: 100px;
+  <strong>/*padding: 50px;*/</strong>
+  }
+  /*Padding is changing the width,
+  so I've commented it out for
+  testing purposes.*/</pre>
+          </li>
+          </ul>
         </div>
       <h2>Chapter 13: Page Metadata</h2>
         <div class="chapter">
@@ -226,10 +280,27 @@ swdb_header($swdbpage);
         </ul>
         <h3>Examples</h3>
         <ul>
-          <li>Mismatched Character Encoding (p. 149)</li>
-          <li>Correct Character Encoding (p. 150)</li>
-          <li>Title Bar Example (p. 152)</li>
-          
+          <li>A metadata-rich opening <code class="pp">&lt;html&gt;</code> tag (p. 148):
+          <pre class="pp">&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot; id=&quot;example-com&quot;&gt;</pre>
+          </li>
+          <li>Specifying the Content Type in the <code class="pp">&lt;meta /&gt;</code> Tag (p. 149):
+            <pre class="pp">&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;</pre>
+          </li>
+          <li><a href="/book/examples/13/mismatched-character-encoding.htm">Mismatched Character Encoding</a> (p. 149)</li>
+          <li><a href="/book/examples/13/correct-character-encoding.htm">Correct Character Encoding</a> (p. 150)</li>
+          <li>Character Entities (p. 151)
+          <pre class="pp lang-html">&lt;!--Essential XHTML character entities that *must* be used:--&gt;&#10;  &amp;lt; (display as &lt;)&#10;  &amp;gt; (displays as &gt;)&#10;  &amp;amp; (displays as &amp;)&#10;&lt;!--In certain situations, such as in JavaScript or in code examples,&#10;you might need to use:--&gt;&#10;  &amp;quot; (displays as &quot;)&#10;  &amp;apos; (displays as &apos;)</pre>
+          </li>
+          <li><a href="/book/examples/13/title-bar-example.htm">Title Bar Example</a> (p. 152)</li>
+          <li>Linking to a Shortcut Icon or "Favicon" (p. 154):
+          <pre class="pp">&lt;!--For most browsers--&gt;&#10;&lt;link rel=&quot;icon&quot; href=&quot;http://example.com/favicon.png&quot; type=&quot;image/png&quot; /&gt;&#10;&lt;!--For Internet Explorer; no type must be specified--&gt;&#10;&lt;link rel=&quot;shortcut icon&quot; href=&quot;http://example.com/&#10;favicon.ico&quot; /&gt;</pre>
+          </li>
+          <li>Linking to CSS (p. 155):
+          <pre class="pp">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/style.css&quot; media=&quot;screen&quot; /&gt;</pre>
+          </li>
+          <li>Linking to JavaScript (p. 155-156):
+          <pre class="pp">&lt;script type=&quot;text/javascript&quot; src=&quot;/js/site.js&quot;&gt;&lt;/script&gt;</pre>
+          </li>
         </ul>
         </div>
       <h2>Chapter 14: Page Branding</h2>
