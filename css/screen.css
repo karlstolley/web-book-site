@@ -21,7 +21,7 @@ div#promo, div#main, div#supporting { /*border-top: 1px solid black;*/ }
 
 
 html { 
-  background: #FFD300;
+  background: #FFC300;
 }
 body {
   font-family: Georgia, "Times New Roman", Times, Roman, serif;
@@ -144,13 +144,13 @@ div#promo .feature p { line-height: 1.4; }
 }
 .featured a:hover,
 .featured a:active {
-  background: #FFD300;
+  background: #FFC300;
   color: #000;
   text-decoration: none;
 }
 .other a:hover,
 .other a:active {
-  color: #FFD300;
+  color: #FFC300;
 }
 .other a {
   font-size: small;
@@ -159,7 +159,7 @@ div#promo .feature p { line-height: 1.4; }
 }
 /* Content */
 .home div#content { 
-  background-color: #FFD300;
+  background-color: #FFC300;
   padding: 0px;
   border-top: 0px;
 }
