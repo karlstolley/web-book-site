@@ -12,6 +12,7 @@ abbr,acronym { border-bottom: 1px dotted; cursor: help; }
 /* Body */
 
 body {
+  font-family: "Times New Roman", Times, Roman, serif;
 }
 
 /* Major Divisions */
