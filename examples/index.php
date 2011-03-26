@@ -307,10 +307,33 @@ div#content { width: 500px; }
         <div class="chapter">
         <h3>Websites</h3>
         <ul>
+          <li><a href="http://microformats.org/">Microformats.org</a></li>
+          <li><a href="http://microformats.org/wiki/rel-home">rel-home microformat</a></li>
           <li><a href="http://www.mezzoblue.com/tests/revised-image-replacement/">Revised Image Replacement</a> (Dave Shea’s gallery of CSS image-replacement techniques)</li>
           <li><a href="http://validator.w3.org">W3C Markup Validation Service</a> (XHTML/HTML validator)</li>
           <li><a href="http://jigsaw.w3.org/cssvalidator/">W3C CSS Validation Service</a> (CSS validator)</li>
           <li><a href="http://creativecommons.org">Creative Commons</a> (Content licensing)</li>
+        </ul>
+        <h3>Examples</h3>
+        <p>Be sure to look at the linked examples below in <a href="http://www.mozilla.com/firefox/">Firefox</a> with the <a href="https://addons.mozilla.org/firefox/addon/60">Web Developer Add-on</a>, using its CSS &gt; Edit CSS feature.</p>
+        <ul>
+          <li>The Header (p. 160-163):
+          <pre class="pp">&lt;div id=&quot;header&quot;&gt;&#10;&#10;  &lt;h1&gt;&lt;a href=&quot;http://example.com/&quot; rel=&quot;home&quot;&gt;Site Name&lt;/a&gt;&lt;/h1&gt;&#10;&#10;  &lt;p class=&quot;tagline&quot;&gt;&#10;    Site Tagline&#10;  &lt;/p&gt;&#10;&#10;  &lt;ul class=&quot;accessibility&quot;&gt;&#10;    &lt;li&gt;&lt;a href=&quot;#navigation&quot;&gt;Jump to Navigation&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li&gt;&lt;a href=&quot;#content&quot;&gt;Jump to Content&lt;/a&gt;&lt;/li&gt;&#10;  &lt;/ul&gt;&#10;&#10;&lt;/div&gt;</pre>
+        </li>
+        <li>Figures 14.1 and 14.2: Jump to Navigation links (View using Lynx; p. 163, 164)</li>
+        <li>Figure 14.3: <a href="/book/examples/14/03/my-prototype.htm">Outlining the accessibility navigation</a> (p. 165)</li>
+        <li>Figure 14.4: <a href="/book/examples/14/04/my-prototype.htm">Absolute positioning on the accessibility navigation</a> (p. 165)</li>
+        <li>Figure 14.5: <a href="/book/examples/14/05/my-prototype.htm">Hiding the accessibility navigation with negative <code class="pp lang-css">left:</code> value</a> (p. 166)</li>
+        <li>Figure 14.6: <a href="/book/examples/14/06/my-prototype.htm">Adding a border to the header</a> (p. 167)</li>
+        <li>Figure 14.7: <a href="/book/examples/14/07/my-prototype.htm">Adding a background color to the header</a> (p. 168)</li>
+        <li>Figure 14.8: <a href="/book/examples/14/08/my-prototype.htm">Adding a boder/background image to the header</a> (p. 169)</li>
+        <li>Figure 14.9: <a href="/book/examples/14/09/my-prototype.htm">Image replacement on the site title</a> (p. 171)</li>
+        <li>Figure 14.10: <a href="/book/examples/14/10/my-prototype.htm">Adjusting the site tagline</a> (p. 171-172)</li>
+        <li>The Footer (p. 171-172):
+        <pre class="pp">&lt;div id=&quot;footer&quot;&gt;&#10;  &lt;p class=&quot;credits&quot;&gt;&#10;    Site information, credits, license.&#10;  &lt;/p&gt;&#10;  &lt;!--These links only work on live, web-available sites:--&gt;&#10;  &lt;ul class=&quot;validators&quot;&gt;&#10;    &lt;li&gt;&lt;a href=&quot;http://validator.w3.org/check?uri=referer&quot;&#10;      title=&quot;Validate this page&#39;s XHTML&quot;&gt;XHTML&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li&gt;&lt;a href=&quot;http://jigsaw.w3.org/css-validator/check/referer&quot;&#10;      title=&quot;Validate this page&#39;s CSS&quot;&gt;CSS&lt;/a&gt;&lt;/li&gt;&#10;  &lt;/ul&gt;&#10;&lt;/div&gt;</pre>
+        </li>
+        <li>Figure 14.11: <a href="/book/examples/14/11/my-prototype.htm">Styling the footer</a> (p. 174)</li>
+        <li>Figure 14.12: <a href="/book/examples/14/12/my-prototype.htm">Styling the site credits</a> (p. 174)</li>
         </ul>
         </div>
       <h2>Chapter 15: Navigation</h2>
