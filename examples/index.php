@@ -338,7 +338,61 @@ div#content { width: 500px; }
         </div>
       <h2>Chapter 15: Navigation</h2>
         <div class="chapter">
-          <!--Nothing in the chapter, really.-->
+          <h3>Examples</h3>
+          <ul>
+            <li>XHTML for a basic navigation area (p. 178):
+            <pre class="pp">&lt;ul id=&quot;navigation&quot;&gt;&#10;  &lt;li&gt;&lt;a id=&quot;nav-home&quot; href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;a id=&quot;nav-resume&quot; href=&quot;/resume.htm&quot;&gt;Resume&lt;/a&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;a id=&quot;nav-portfolio&quot; href=&quot;/portfolio.htm&quot;&gt;Portfolio&lt;/a&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;a id=&quot;nav-about&quot; href=&quot;/about.htm&quot;&gt;About&lt;/a&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;a id=&quot;nav-contact&quot; href=&quot;/contact.htm&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;&#10;&lt;/ul&gt;</pre>
+            </li>
+            <li>CSS for maximizing clickable areas (p. 178):
+            <pre class="pp lang-css">ul#navigation a {
+  display: block; /*Treat links as blocks*/
+  padding: 20px; /*Padding is also clickable*/
+  background-color: gray;
+}</pre>
+            </li>
+            <li>Figure 15.1: <a href="/book/examples/15/01/my-prototype.htm">Generous boxes, but small clickable areas</a> (p. 182)</li>
+            <li>Figure 15.2: <a href="/book/examples/15/02/my-prototype.htm">Generous boxes, large clickable areas</a> (p. 182)</li>
+            <li>Wayfinding Made Simple (p. 183-184):
+            <pre class="pp lang-css">ul#navigation li a:hover,
+ul#navigation li a:focus,
+body.home ul#navigation li a#nav-home,
+body.resume ul#navigation li a#nav-resume,
+body.portfolio ul#navigation li a#nav-portfolio,
+body.about ul#navigation li a#nav-about,
+body.contact ul#navigation li a#nav-contact {
+  background-color: white;
+}</pre>
+            </li>
+            <li>Horizontal Navigation, Float Method, Automatic Width (p. 185):
+            <pre class="pp lang-css">ul#navigation {
+  overflow: hidden; /*Necessary style for best handling floats*/
+}
+ul#navigation li {
+  float: left; /*Float items to the left*/
+  display: inline; /*Fix a float issue in older IE browsers*/
+  margin-right: 5px; /*Put some space between items*/
+}
+ul#navigation li a {
+  display: block; /*Maximize clickable area*/
+  padding: 5px 10px 5px 10px; /*Generous padding on top and bottom,
+                                less on right and left*/
+  background-color: #CCC; /*Background color for the items*/
+}</pre>
+            </li>
+            <li>Figure 15.3: <a href="/book/examples/15/03/my-prototype.htm">Horizontal navigation bar with different button widths</a> (p. 186)</li>
+            <li>Horizontal Navigation, Float Method, Fixed Width (p. 186):
+            <pre class="pp lang-css">ul#navigation li {
+  width: 100px; /*Set a fixed width on `li`
+                  example in Figure 15.4 puts
+                  the width on `li a` instead.*/
+  float: left; /*Float items to the left*/
+  display: inline; /*Fix a float issue in older IE browsers*/
+  margin-right: 5px; /*Put some space between items*/
+}</pre>
+            </li>
+            <li>Figure 15.4: <a href="/book/examples/15/04/my-prototype.htm">Horizontal navigation bar with uniform button widths</a> (p. 187)</li>
+            <li>Figure 15.5: <a href="/book/examples/15/05/my-prototype.htm">Horizontal navigation bar with uniform widths, centered text</a> (p. 187)</li>
+          </ul>
         </div>
       <h2>Chapter 16: Text Content</h2>
         <div class="chapter">
