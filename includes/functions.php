@@ -28,9 +28,8 @@ echo
   <link rel="icon" href="http://sustainablewebdesign.com/book/favicon.png" type="image/png" />
 
   <!--For Internet Explorer:-->
-<!--
-  <link rel="shortcut icon" href="http://example.com/favicon.ico" />
--->
+  <link rel="shortcut icon" href="http://sustainablewebdesign.com/book/favicon.ico" />
+
   <!--Load the Google Prettify library-->
   <script type="text/javascript" src="/book/js/prettify.js"></script>
   <!--Load the jQuery library-->
