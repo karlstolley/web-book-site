@@ -1,0 +1,242 @@
+/* screen.css: Screen Styles */
+
+/* Base Styles */
+
+/* Bold on headings, b, and strong */
+h1,h2,h3,h4,h5,h6,b,strong { font-weight: bold; }
+/* Italic on i, em, and cite: */
+i,em,cite { font-style: italic; }
+/* Dotted border and help cursor to abbr and acronym: */
+abbr,acronym { border-bottom: 1px dotted; cursor: help; }
+
+/* Body */
+
+body {
+  /*
+  background-image: url('gfx/body-background-normal.png');
+  background-color: white;
+  background-repeat: repeat-x;
+  padding-top: 25px;
+  */
+}
+html {
+  /*
+  background-image: url('gfx/footer-background.png');
+  background-color: black;
+  background-repeat: repeat-x;
+  background-position: bottom left;
+  padding-bottom: 110px;
+  */
+}
+
+/* Major Divisions */
+
+div#page {
+  width: 700px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 2;
+}
+/* Header */
+div#header {
+  height: 85px;
+  background-image: url('gfx/header-background.png');
+  background-repeat: no-repeat;
+}
+div#header h1 a {
+  display: block;
+  position: absolute;
+  background-image: url('gfx/header-h1-a-background.png');
+  height: 75px;
+  width: 200px;
+  text-indent: -10000px;
+}
+div#header p.tagline {
+  font-style: italic;
+  padding-left: 10px;
+  color: white; 
+  margin-left: 225px;
+  padding-top: 35px;
+}
+
+div#header ul.accessibility {
+  position: absolute;
+  left: -10000px;
+}
+
+/* Content */
+div#content {
+  padding-bottom: 100px;
+}
+
+div#main {
+}
+
+div#supporting {
+}
+
+/* Footer */
+div#footer {
+ background-image: url('gfx/footer-background.png');
+ background-repeat: repeat-x;
+ background-color: black;
+ padding: 20px 10px 10px 10px;
+ /*position: absolute;*/
+ color: white;
+}
+div#footer p.credits {
+ font-style: italic;
+}
+div#footer p.credits img {
+ display: block;
+ padding: 10px 0px 10px 0px;
+}
+div#footer ul.validators {
+}
+div#footer ul.validators li {
+  display: inline;
+}
+
+/*Navigation*/
+ul#navigation {
+  display: none;
+	width: 200px;
+	border-top: 1px solid #666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+ul#navigation li {
+  border-bottom: 1px solid #666;
+}
+
+ul#navigation li a {
+  display: block;
+  padding: 10px;
+  background-color: #CCC;
+  text-decoration: none;
+  color: #333;
+}
+
+ul#navigation li a:visited {
+}
+
+ul#navigation li a:hover,
+ul#navigation li a:focus {
+  background-color: #FFF;
+}
+
+
+/* Content Typography: Shared Styles */
+div#content {
+  font-family: Arial, sans-serif;
+  font-size: small;
+  line-height: 1.6;
+  margin-left: 225px;
+}
+
+div#content p,
+div#content ul,
+div#content ol {
+  margin-bottom: 1em;
+}
+
+/*Content Typography: Headings*/
+div#content h2,
+div#content h3 { 
+  font-family: Georgia, "Times New Roman", serif; 
+}
+div#content h2 {
+  font-size: 150%;
+}
+div#content h3 {
+  margin-top: .5em;
+  font-size: 125%;
+  border-bottom: 1px solid #666;
+}
+div#content h4 {
+}
+div#content h5 {
+}
+div#content h6 {
+}
+
+/*Content Typography: Paragraphs*/
+div#content p {
+  text-indent: 20px;
+}
+div#content h2 + p {
+  font-weight: bold;
+  text-indent: 0px;
+}
+div#content h3 + p {
+  text-indent: 0px;
+}
+
+/* Content Typography: Blockquotes and Pullquotes*/
+div#content blockquote {
+  border: 1px solid black;
+  background-color: #DDD;
+  margin: 20px;
+}
+div#content blockquote p {
+  text-indent: 0px;
+  padding: 10px;
+  margin: 0px;
+}
+
+div#content p.pullquote {
+  text-indent: 0px;
+  font-size: 150%;
+  border: 1px dotted #999;
+  padding: 20px;
+}
+
+/*Content Typography: Unordered Lists*/
+div#content ul {
+  margin-left: 40px;
+}
+div#content ul li {
+  list-style-type: disc;
+}
+/*Nested*/
+div#content * li ul {
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+div#content * li ul li {
+  list-style-type: circle; 
+}
+
+/*Content Typography: Ordered Lists*/
+div#content ol {
+  margin-left: 40px;
+}
+div#content ol li {
+  list-style-type: decimal;
+}
+/*Nested*/
+div#content * li ol {
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+div#content * li ol li {
+  list-style-type: upper-alpha;
+}
+
+/*Phrases*/
+div#content code { background-color: #DDD; }
+
+/*Content Typography: Links*/
+div#content a {
+  font-weight: bold;
+}
+div#content a:visited {
+}
+div#content a:hover,
+div#content a:focus {
+}
+div#content a.ext { font-weight: normal; }
+/*Supporting*/
+div#supporting h2 + p { font-weight: normal; }
+

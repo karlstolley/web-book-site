@@ -396,7 +396,18 @@ ul#navigation li a {
         </div>
       <h2>Chapter 16: Text Content</h2>
         <div class="chapter">
-          <!--Nothing in the chapter, really.-->
+          <h3>Websites</h3>
+          <ul>
+            <li><a href="http://lipsum.com/">Lipsum.com: Lorem Ipsum Generator</a></li>
+          </ul>
+          <h3>Examples</h3>
+          <ul>
+            <li><a href="/book/examples/16/style-guide.htm">Finished Sample Style Guide</a> (p. 190-198, 204)</li>
+            <li>Figure 16.6: <a href="/book/examples/16/06/style-guide.htm">Setting Arial on the body tag</a> (p. 199)</li>
+            <li>Figure 16.7: <a href="/book/examples/16/07/style-guide.htm">Line-height inherited in the content division</a> (p. 200)</li>
+            <li>Figure 16.8: <a href="/book/examples/16/08/style-guide.htm#supporting">Line-height difference in the supporting content division</a> (p. 201)</li>
+            <li>Figure 16.9: <a href="/book/examples/16/09/style-guide.htm">Indenting paragraphs in the content division with the descendant selector</a> (p. 202)</li>
+          </ul>
         </div>
       <h2>Chapter 17: Page Layout</h2>
         <div class="chapter">
