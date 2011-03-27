@@ -20,16 +20,13 @@ echo
 
   <meta name="description" content="'.$swdbpage['description'].'" />
 
-<!--
-  <link rel="image_src" href="http://example.com/media/share/thumbnail.jpg" />
--->
+  <link rel="image_src" href="http://sustainablewebdesign.com/book/media/img/share-thumbnail.png" />
 
 <!--REMOVE COMMENT TAGS TO USE FAVICON LINKS:-->
 
   <!--For most browsers:-->
-<!--
-  <link rel="icon" href="http://example.com/favicon.png" type="image/png" />
--->
+  <link rel="icon" href="http://sustainablewebdesign.com/book/favicon.png" type="image/png" />
+
   <!--For Internet Explorer:-->
 <!--
   <link rel="shortcut icon" href="http://example.com/favicon.ico" />
