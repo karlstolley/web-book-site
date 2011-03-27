@@ -39,7 +39,7 @@ ul#navigation li {
 */
 
 
-/* Styles from in Chapter 14 */
+/* Styles from Chapter 14 */
 div#footer {
   background: black url('gfx/footer-background.png') repeat-x; /*Using background: shorthand*/
   padding: 20px 10px 10px 10px; /*Using padding: shorthand Top Right Bottom Left (TRBL)*/
