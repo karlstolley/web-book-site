@@ -38,8 +38,6 @@ echo
   <script type="text/javascript" src="/book/js/prettify.js"></script>
   <!--Load the jQuery library-->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-  <!--Load the Snippet jQuery Syntax Highlighter-->
-  <script type="text/javascript" src="/book/js/jquery.snippet.min.js"></script>
   <!--Load site-wide JavaScript-->
   <script type="text/javascript" src="/book/js/site.js"></script>';
   if($swdbpage['swfobject']==true) {
