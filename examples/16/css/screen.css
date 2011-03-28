@@ -138,7 +138,7 @@ div#content {
 div#content p,
 div#content ul,
 div#content ol {
-  margin-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 /*Content Typography: Headings*/
@@ -239,4 +239,12 @@ div#content a:focus {
 div#content a.ext { font-weight: normal; }
 /*Supporting*/
 div#supporting h2 + p { font-weight: normal; }
+
+/*
+
+CSS FOR THIS EXAMPLE IS AT THE TOP OF THIS FILE. SCROLL ALL THE WAY UP!
+
+*/
+
+
 
