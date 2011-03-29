@@ -418,6 +418,28 @@ ul#navigation li a {
           <li><a href="http://www.quirksmode.org/css/condcom.html">Quirksmode.org Conditional Comments</a> (Internet Explorer work-arounds)</li>
           <li><a href="http://msdn.microsoft.com/en-us/library/cc351024(VS.85).aspx">CSS Compatibility and Internet Explorer</a> (Internet Explorer work-arounds)</li>
         </ul>
+        <h3>Examples</h3>
+        <ul>
+          <li>Figure 17.1: <a href="/book/examples/17/01/my-prototype.htm">Illustrative background colors on each major division of the page</a> (p. 206)</li>
+          <li>Figure 17.2: <a href="/book/examples/17/02/rough-mockup.png">Rough mockup of a page (PNG image)</a> (p. 207)</li>
+          <li>Figure 17.3: <a href="/book/examples/17/03/mockup-with-images.png">Another mockup, with images that can be used for the actual design (PNG image)</a> (p. 210)</li>
+          <li>Figure 17.4: <a href="/book/examples/17/04/my-prototype.htm">Navigation positioned absolutely over the content, which must be moved out of the way </a> (p. 211)</li>
+          <li>Figure 17.5: <a href="/book/examples/17/05/my-prototype.htm">Content pushed out of the way of navigation; layout begins to develop</a> (p. 212)</li>
+          <li>Figure 17.6: <a href="/book/examples/17/06/my-prototype.htm">Right-hand navigation layout by changing only two styles</a> (p. 212)</li>
+          <li>Figure 17.7: <a href="/book/examples/17/07/my-prototype.htm">Centering the page for all nonpositioned elements (navigation stuck on left)</a> (p. 214)</li>
+          <li>Figure 17.8: <a href="/book/examples/17/08/my-prototype.htm">Centered page with <code class="pp lang-css">div#page</code> as positioning context (navigation fix)</a> (p. 214)</li>
+          <li>Figure 17.9: <a href="/book/examples/17/09/my-prototype.htm">Supporting content positioned absolutely; bad positioning context</a> (p. 215)</li>
+          <li>Figure 17.10: <a href="/book/examples/17/10/my-prototype.htm">Supporting content positioned absolute; <code class="pp lang-css">div#content</code> as positioning context</a> (p. 216)</li>
+          <li>Figure 17.11: <a href="/book/examples/17/11/my-prototype.htm">Minimum height (<code class="pp lang-css">min-height:</code>) on the main content division</a> (p. 217)</li>
+          <li>Figure 17.12: <a href="/book/examples/17/12/my-prototype.htm">Positioned page with branding and navigation styles from previous chapters</a> (p. 218)</li>
+          <li>Figure 17.13: <a href="/book/examples/17/13/css/gfx/body-background-normal.png">Background image to be tiled horizontally on the background of the page</a> (p. 219)</li>
+          <li>Figure 17.14: <a href="/book/examples/17/14/my-prototype.htm">Page design with the background image in Figure 17.13</a> (p. 220)</li>
+          <li>Figure 17.15: <a href="/book/examples/17/15/my-prototype.htm">Revised layout, placing the supporting content below main</a> (p. 220)</li>
+          <li>Figure 17.16: <a href="/book/examples/17/16/my-prototype.htm">Footer as styled in previous chapters; it looks unfinished</a> (p. 221)</li>
+          <li>Figure 17.17: <a href="/book/examples/17/17/my-prototype.htm">Footer positioned absolutely over tiled background image on <code class="pp lang-css">html</code></a> (p. 222)</li>
+          <li>Figure 17.18: <a href="/book/examples/17/18/my-prototype.htm">The page looks incomplete because of the white area below the footer</a> (p. 223)</li>
+          <li>Figure 17.19: <a href="/book/examples/17/19/my-prototype.htm">Simple background color fix on <code class="pp lang-css">html</code> makes the page look more complete</a> (p. 224)</li>
+        </ul>
         </div>
       <h2>Chapter 18: Multimedia Content</h2>
         <!--HTML5 stuff?-->
