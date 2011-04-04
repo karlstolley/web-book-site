@@ -39,6 +39,7 @@ swdb_header($swdbpage);
         <li><a href="http://validator.w3.org">W3C Markup Validation Service</a> (XHTML/HTML validator)</li>
         <li><a href="http://jigsaw.w3.org/cssvalidator/">W3C CSS Validation Service</a> (CSS validator)</li>
       </ul>
+      <p class="warning"><strong>Do not use materials found at W3Schools</strong>. See the standards-based design community’s <a href="http://w3fools.com">response to W3Schools at w3fools.com</a>, which notes <a href="http://w3fools.com#why-w3schools-sucks">some examples of inaccuracies in W3School’s materials</a>.</p>
       <p><strong>Mac OS X users</strong> should download and install these:</p>
       <ul>
         <li><a href="http://www.barebones.com/products/textwrangler/">TextWrangler</a> (Text editor; also <a href="http://itunes.apple.com/us/app/textwrangler/id404010395?mt=12">available via the Mac App Store</a>)</li>
