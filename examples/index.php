@@ -457,6 +457,23 @@ ul#navigation li a {
           <li><a href="http://www.viddler.com/">Viddler</a> (Video sharing)</li>
           <li><a href="http://www.vimeo.com">Vimeo</a> (Video sharing)</li>
         </ul>
+        <h3>Examples</h3>
+        <ul>
+          <li>Sample markup for a photo caption with an accessible label (p. 226):
+          <pre class="pp">&lt;p class=&quot;caption&quot;&gt;&#10;  &lt;span class=&quot;access-label&quot;&gt;Photo caption: &lt;/span&gt;We took&#10;  this photograph of the Jefferson Memorial during our visit&#10;  to Washington, D.C. in November of 2010.&#10;&lt;/p&gt;</pre>
+          </li>
+          <li>CSS to hide the access label (p. 227):
+          <pre class="pp lang-css">.access-label {
+  display: block; /*Display as block for positioning*/
+  position: absolute; /*Pulll from document flow*/
+  left: -10000px; /*Move way left of the screen*/
+}</pre>
+          </li>
+          <li>Example reusable markup for creating a consistent image presentation (p. 227-228):
+          <pre class="pp">&lt;div class=&quot;photograph&quot;&gt;&#10;  &lt;!--Path to image in src=&quot;&quot;; match height and width to image--&gt;&#10;  &lt;img src=&quot;&quot; height=&quot;300&quot; width=&quot;400&quot; alt=&quot;Add alt text&quot; /&gt;&#10;  &lt;p class=&quot;caption&quot;&gt;&#10;    &lt;span class=&quot;access-label&quot;&gt;Photo caption: &lt;/span&gt;&#10;    &#10;    Image description....&#10;    &#10;  &lt;/p&gt;&#10;&lt;/div&gt;</pre>
+          </li>
+          <li>Figure 18.1: <a href="/book/examples/18/photos.htm">Example presentation of a photograph and caption</a> (p. 229)</li>
+        </ul>
         </div>
       <h2>Chapter 19: Performance and Interaction</h2>
         <div class="chapter">
