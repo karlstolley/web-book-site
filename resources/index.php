@@ -63,7 +63,7 @@ swdb_header($swdbpage);
       </ul>
       </div>
 
-      <h2>Browsers and Development</h2>
+      <h2>Browsers and Browser-based Development Tools</h2>
       <ul>
         <li><a href="http://www.google.com/chrome/">Google Chrome</a>: Webkit-based browser</li>
         <li><a href="https://chrome.google.com/extensions/detail/bfbameneiokkgbdmiekhjnmfkcnldhhm">Chris Pederick’s Web Developer Add-on for Google Chrome</a>: Chrome extension</li>
@@ -94,16 +94,15 @@ swdb_header($swdbpage);
         <li><a href="http://www.apachefriends.org/en/faq-xampp.html">XAMPP Documentation</a>: Development Web server documentation</li>
       </ul>
 
-      <h2>Web Standards</h2>
+      <h2>Web Standards Information and Education</h2>
       <ul>
-        <li><a href="http://validator.w3.org">W3C Markup Validation Service</a>: XHTML/HTML validator</li>
-        <li><a href="http://jigsaw.w3.org/cssvalidator/">W3C CSS Validation Service</a>: CSS validator</li>
-        <li><a href="http://www.webstandards.org/">Web Standards Project (WaSP)</a>: Standards advocacy and education group</li>
-        <li><a href="http://www.w3.org/">World Wide Web Consortium (W3C)</a>: Group behind the recommendations that make up many Web standards</li>
-        <li><a href="http://www.w3.org/WAI/">Web Accessibility Initiative (WAI)</a>: W3C organization</li>
-        <li><a href="http://www.w3.org/WCAG/">Web Content Accessibility Guidelines (WCAG)</a>: W3C recommendation</li>
         <li><a href="http://www.section508.gov/">Section 508</a>: United States government IT accessibility</li>
         <li><a href="http://access-board.gov/sec508/standards.htm">Section 508 guidelines and standards</a>: United States Access Board</li>
+        <li><a href="http://validator.w3.org">W3C Markup Validation Service</a>: XHTML/HTML validator</li>
+        <li><a href="http://jigsaw.w3.org/cssvalidator/">W3C CSS Validation Service</a>: CSS validator</li>
+        <li><a href="http://www.w3.org/WAI/">Web Accessibility Initiative (WAI)</a>: W3C organization</li>
+        <li><a href="http://www.w3.org/WCAG/">Web Content Accessibility Guidelines (WCAG)</a>: W3C recommendation</li>        <li><a href="http://www.webstandards.org/">Web Standards Project (WaSP)</a>: Standards advocacy and education group</li>
+        <li><a href="http://www.w3.org/">World Wide Web Consortium (W3C)</a>: Group behind the recommendations that make up many Web standards</li>
       </ul>
 
       <h2>Web Design Galleries and Inspiration</h2>
@@ -111,15 +110,15 @@ swdb_header($swdbpage);
         <li><a href="http://www.csszengarden.com/">CSS Zen Garden</a>: Site of CSS designs using the exact same XHTML</li>
       </ul>
 
-      <h2>Language References and Software Documentation</h2>
+      <h2>Language References and Documentation</h2>
       <ul>
         <li><a href="http://htmldog.com/reference/htmltags/">HTML Dog HTML Tag Reference</a>: Language reference</li>
         <li><a href="http://htmldog.com/reference/cssproperties/">HTML Dog CSS Properties</a>: Language reference</li>
-        <li><a href="http://reference.sitepoint.com/html">SitePoint HTML Reference</a>: Language Reference</li>
-        <li><a href="http://reference.sitepoint.com/css">SitePoint CSS Reference</a>: Language reference</li>
-        <li><a href="http://php.net/docs.php">PHP documentation</a>: Language reference</li>
         <li><a href="http://microformats.org">Microformats.org</a>: Language reference</li>
         <li><a href="http://www.webmaster-toolkit.com/mime-types.shtml">MIME Types List</a>: Webmaster Toolkit reference</li>
+        <li><a href="http://php.net/docs.php">PHP documentation</a>: Language reference</li>
+        <li><a href="http://reference.sitepoint.com/html">SitePoint HTML Reference</a>: Language Reference</li>
+        <li><a href="http://reference.sitepoint.com/css">SitePoint CSS Reference</a>: Language reference</li>
       </ul>
 
       <h2>Web Design and Development Libraries</h2>
