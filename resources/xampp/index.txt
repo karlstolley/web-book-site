@@ -1,0 +1,28 @@
+XAMPP (as of XAMPP v. 1.7.4) for Windows
+
+For best, easiest results, install XAMPP on a USB drive; XAMPP unzips to about 500MB, so use a 1GB or larger drive.
+
+Windows 7:
+
+--Download either the ZIP or the 7zip archive; NOT the installer. (7zip archive is smaller, so it downloads faster; but it may take longer to unzip, up to 10 or 15 minutes, depending on the speed of your computer).
+
+--Copy the unzipped xampp/ folder to the root of your drive (e.g., not in a sub-folder). If your unzipping program has created a folder with xampp/ inside of it (e.g., xampp-win32-1.7.4-VC6/), move just the xampp/ folder to your drive. Depending on the speed of your USB drive, that, too, make take a little while, too (15 or 20 minutes).
+
+**Firewall notes: On the Windows 7 installation that these instructions were written in (which was a regular user account without administrative rights), hitting Cancel on the Windows Firewall warnings did not interfere with accessing the default XAMPP installation at http://localhost/. Hit cancel, and try http://localhost/ in your browser.
+
+If that fails, you can try modifying the httpd.conf file in xampp/apache/conf/; open httpd.conf in your text editor and find the line that reads Listen 80 (Line 47, as of XAMPP v. 1.7.4); change that line to read Listen 8000. Restart XAMPP, and try to access your XAMPP installation in the browser at http://localhost:8000/ (The little XAMPP console will report that `Apache started [Port 80]`, even if you change the Listen line to 8000, 8080, or another high number.)
+
+
+
+Windows Vista:
+
+
+Windows XP:
+
+Mac OS X:
+
+As of this writing, there does not appear to be a simple USB drive solution for OS X; you will have to install XAMPP on your Mac, which means that you will need to have administrator rights on your machine.
+
+One alternative, for those working on Macs without administrative access, is to set up a development subdomain on your hosting. E.g., dev.example.com/, where 'example.com' is your domain.
+
+But if you do have administrative access, you can install XAMPP--and follow the instructions for modifying httpd.conf to keep your site in your home directory (instead of the /Applications/XAMPP/ directory).
