@@ -13,6 +13,19 @@ swdb_header($swdbpage);
 
 ?>
 
+  <div id="promo">
+    <div class="summary">
+      <h2>Title</h2>
+      <p>
+        Description
+      </p>
+    </div>
+    <!--
+      <div class="feature">
+      </div>
+    -->
+  </div>
+
   <div id="content">
 
     <div id="main">
