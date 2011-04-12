@@ -209,7 +209,29 @@ div#main ul.feature > li {
 div#main ul.feature > li.updates {
   margin-right: 0px;
 }
-.examples div#main h2 {
+div.screenshot {
+  padding: 10px 10px 0px 10px;
+  margin: 1em 0em;
+  background: #004E98;
+}
+div.screenshot img {
+  display: block;
+}
+div.screenshot p {
+  color: white;
+  font-style: italic;
+  width: 400px;
+  font-size: small;
+  margin: 1em 0em;
+  padding-bottom: 10px;
+}
+div.screenshot p code {
+  color: #0D0;
+  font-style: normal;
+}
+
+.examples div#main h2,
+.resources div#main h3 {
   background: #222;
   color: #FFF;
   padding: 10px;
@@ -359,6 +381,8 @@ div#content * li ul li {
 div#content ol {
 }
 div#content ol li {
+  list-style-type: decimal;
+  margin-left: 1.5em;
 }
 /*Nested*/
 div#content * li ol {
