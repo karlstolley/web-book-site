@@ -63,6 +63,23 @@ swdb_header($swdbpage);
       </ul>
       </div>
 
+<!--NEW HEADINGS:
+      Browsers and Browser-Based Tools
+      Free and Open Source Software
+      Web Standards Information and Education
+      Web Design Galleries and Inspiration
+      Language References and Documentation
+      Development Libraries and Media Plugins
+      Design Approaches and Techniques
+      WordPress
+-->
+      
+
+
+
+
+
+
       <h2>Browsers and Browser-based Development Tools</h2>
       <ul>
         <li><a href="http://www.google.com/chrome/">Google Chrome</a>: Webkit-based browser</li>
