@@ -21,7 +21,8 @@ i,em,cite { font-style: italic; }
 
 ul.accessibility,
 ul#navigation,
-ul.validators {
+ul.validators,
+#book {
 	display: none;
 }
 
@@ -35,6 +36,8 @@ ul.validators {
   the content: property.
   See http://www.alistapart.com/articles/goingtoprint/
 */
+
+a { text-decoration: none; }
 
 div#content a:link:after,
 div#content a:visited:after {
@@ -53,3 +56,8 @@ abbr:after,
 acronym:after {
      content: " (" attr(title) ") ";
 }
+
+ol,ul,p { padding-bottom: 1em; }
+
+ol { margin-left: .5in; }
+ol li { list-style-type: decimal; }
