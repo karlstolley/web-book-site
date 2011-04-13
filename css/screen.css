@@ -14,6 +14,8 @@ code {
   color: #090;
 }
 
+.warning code { color: #666; }
+
 /* Dev Styles */
 div#promo, div#main, div#supporting { /*border-top: 1px solid black;*/ }
 

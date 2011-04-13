@@ -32,8 +32,8 @@ swdb_header($swdbpage);
       <p>
         You can download the RPK in a few of different forms; all are in <code>.zip</code> format,
         so <a href="http://www.7-zip.org/download.html">you might need 7-zip</a> to open them on
-        your computer if it has no archiving program. Here are the three versions used in the book,
-        which match the content of the book and will always be available here.
+        your computer if it has no archiving program. <strong>Here are the three versions used in
+        the book</strong>, which match the content of the book and will always be available here:
       </p>
       <ul>
         <li><a href="/book/rpk/rpk.zip">rpk.zip</a>: Basic XHTML version of the RPK used throughout
@@ -43,6 +43,19 @@ swdb_header($swdbpage);
         <li>Coming soon: <a href="/book/rpk/#rpk-wp.zip">rpk-wp.zip</a>: WordPress-theme version of the
         RPK for use with WordPress version 3.1 (see Chapter 22)</li>
       </ul>
+      <p class="warning">
+        <strong>The RPK HTML files use root-relative paths to load CSS and JavaScript.</strong> They
+        were created for use with a local development Web server and the
+        <code>http://localhost/</code> URL; <a href="/book/resources/xampp/">set one up yourself
+        with XAMPP</a>. If you are opening your files directly in the browser, you must change the
+        root-relative paths to relative (see Chapter 20 in the book for more on paths). For example,
+        instead of <code>href="/css/screen.css"</code>, remove the slash so it reads
+        <code>href="css/screen.css"</code>. Use your text editor to do a search and replace in the
+        prototype HTML files; search for <code>="/</code> and replace with <code>="</code>. You will
+        have to alter those relative paths if you start building a folder-oriented site
+        architecture. (Again, you're better off <a href="/book/resources/xampp/">setting up
+        XAMPP</a>.)
+      </p>
       <p>
         Each of those versions of the RPK includes version 1.5.1 of <a
         href="http://jquery.com">jQuery</a> and <a
