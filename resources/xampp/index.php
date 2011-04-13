@@ -36,6 +36,10 @@ swdb_header($swdbpage);
         <code>http://localhost/</code>, that makes it possible to use root-relative paths, run PHP
         scripts, and do other kinds of things your live website will do.
       </p>
+      <p>
+        Windows instructions immediately follow; Mac users can <a href="#xampp-osx">jump right to
+        the OS X instructions.
+      </p>
       <h3 id="xampp-windows">XAMPP Setup: Windows</h3>
       <p>
         These steps have been tested with XAMPP version 1.7.4 on a USB drive on Windows XP, Windows Vista, and Windows 7.
@@ -44,14 +48,15 @@ swdb_header($swdbpage);
       </p>
       <ol>
         <li>
-          Download either the ZIP or the 7zip archive for Windows 
+          Download either the ZIP or the 7zip archive of XAMPP for Windows 
           <a href="http://www.apachefriends.org/en/xampp-windows.html#641">from the XAMPP site</a>;
           <strong>do not download the installer</strong>. The 7zip archive is smaller, so it
           downloads faster; but it may take longer to unzip, up to 10 or 15 minutes, depending on
           the speed of your computer.
         </li>
         <li>
-          Unzip the ZIP or 7zip archive; if you don't have an unzipping utility, try 7-Zip.
+          Unzip the ZIP or 7zip archive; if you don’t have an unzipping utility, try 
+          <a href="http://www.7-zip.org/">7-Zip</a>.
         </li>
         <li>
           Copy the unzipped <code>xampp</code> folder to the root of your USB drive (in other words,
@@ -70,15 +75,15 @@ swdb_header($swdbpage);
         </li>
         <li>
           Load XAMPP by double-clicking on the <code>xampp</code> folder and finding and then
-          double-clicking the <code>xampp-control.exe</code> file. (If you don't see the
-          <code>.exe</code> extension, the file will still work--but you should Google for <em>show
+          double-clicking the <code>xampp-control.exe</code> file. (If you don’t see the
+          <code>.exe</code> extension, the file will still work—but you should Google for <em>show
           file extensions</em> and the name of your operating system (Windows 7, Windows Vista,
           Windows XP; see pages 45-47 in the book).
         </li>
         <li>
           Start the Apache web server by clicking the Start button on the XAMPP Control Panel.
           Windows Vista and Windows 7 users may get a warning about Windows Firewall; click Cancel
-          on any windows that pop up.
+          on any firewall warning windows that pop up.
           <div class="screenshot">
             <img src="/book/media/img/xampp-control-panel.png" width="446" height="352" alt="Screenshot showing the XAMPP control panel and Apache running" />
             <p>
@@ -89,7 +94,7 @@ swdb_header($swdbpage);
         <li>
           Test that XAMPP is running properly by going to the URL <code>http://localhost/</code> in
           your browser (type the whole thing, including the <code>http://</code> part; notice
-          there's no www. or .com). You should see the XAMPP welcome screen if all is working
+          there’s no www. or .com). You should see the XAMPP welcome screen if all is working
           correctly.
           <div class="screenshot">
            <img src="/book/media/img/xampp-splash.png" width="400" height="300" alt="Screenshot showing the XAMPP splash screen" />
@@ -97,16 +102,68 @@ swdb_header($swdbpage);
           </div>
         </li>
         <li>
-          Finally, you’ll want to rename the existing <code>htdocs</code> folder inside of the <code>xampp</code> folder to <code>htdocs-original</code>. (You can rename it back if you need, for example, to configure the MySQL database for use with WordPress development.) Then create your own new <code>htdocs</code> folder for your site, or download, unzip, and copy over the <code>htdocs</code> folder from the <a href="/book/rpk/">Rapid Prototyping Kit</a> and get to work on your site. (You might want to stop and restart Apache in the XAMPP Control Panel before you start working.)
+          Some users may get an error from XAMPP that states another service is using Port 80
+          (Skype, for example, is known to use that port.) <strong>If everything is working for you,
+          skip to the next step</strong>. If you get an error like that, use your text editor (like
+          <a href="http://notepad-plus-plus.org/">Notepad++</a>) to open up the
+          <code>httpd.conf</code> file. Go to the <code>xampp</code> folder, then into the
+          <code>apache</code> folder, and finally into the <code>conf</code> folder, where you will
+          find the the <code>httpd.conf</code> file. Locate the line in the file that reads
+          <code>Listen 80</code> using the Find function in your text editor. Around line 37, you
+          will find a block of text that looks like:
+          <pre class="term">#
+# Listen: Allows you to bind Apache to specific IP addresses and/or
+# ports, instead of the default. See also the &lt;VirtualHost&gt;
+# directive.
+#
+# Change this to Listen on specific IP addresses as shown below to 
+# prevent Apache from glomming onto all bound IP addresses.
+#
+#Listen 0.0.0.0:80
+#Listen [::]:80
+Listen 80
+
+</pre>
+          Comment out the line that reads <code>Listen 80</code> by putting a hash (<code>#</code>)
+          in front of it; below that line, write your own line that reads <code>Listen 8000</code>.
+          This part of your file will now look like:
+          <pre class="term">#
+# Listen: Allows you to bind Apache to specific IP addresses and/or
+# ports, instead of the default. See also the &lt;VirtualHost&gt;
+# directive.
+#
+# Change this to Listen on specific IP addresses as shown below to 
+# prevent Apache from glomming onto all bound IP addresses.
+#
+#Listen 0.0.0.0:80
+#Listen [::]:80
+#Listen 80
+<strong>Listen 8000</strong>
+
+</pre>
+          Start or stop and start Apache from the XAMPP Control Panel. Point your browser to
+          <code>http://localhost:8000/</code>, and you should see the XAMPP welcome screen. Remember
+          to use <code>http://localhost:8000/</code> instead of <code>http://localhost/</code> when
+          you’re developing your site.
+        </li>
+        <li>
+          To develop your own site, you’ll want to rename the existing <code>htdocs</code> folder
+          inside of the <code>xampp</code> folder to <code>htdocs-original</code>. (You can rename
+          it back if you need, for example, to configure the MySQL database for use with WordPress
+          development.) Then create your own new <code>htdocs</code> folder for your site, or
+          download, unzip, and copy over the <code>htdocs</code> folder from the <a
+          href="/book/rpk/">Rapid Prototyping Kit</a> and get to work on your site. (You might want
+          to stop and restart Apache in the XAMPP Control Panel before you start working.)
         </li>
       </ol>
+
       <h3 id="xampp-osx">XAMPP Setup: Mac OS X</h3>
       <p>
         Unfortunately, the OS X version of XAMPP will not run on a USB drive; you must have
-        administrative rights on any Mac that you wish to install XAMPP on. These instructions have
-        been tested on OS X Leopard and OS X Snow Leopard using XAMPP version 1.7.3. Please 
-        <a href="/book/contact/">contact the author</a> if you run into any problems so that these
-        instructions can be improved, if necessary.
+        administrative rights on any Mac that you wish to install and run XAMPP on. These
+        instructions have been tested on OS X Leopard and OS X Snow Leopard using XAMPP version
+        1.7.3. Please <a href="/book/contact/">contact the author</a> if you run into any problems
+        so that these instructions can be improved, if necessary.
       </p>
       <ol>
         <li>
@@ -117,10 +174,12 @@ swdb_header($swdbpage);
         </li>
         <li>
           Find the XAMPP Control application, which will be in an <code>XAMPP</code> folder inside
-          of your Applications folder. Double-click the XAMPP Control application to launch.
+          of your <code>Applications</code> folder. Double-click the XAMPP Control application to
+          launch.
         </li>
         <li>
-          A little Control window will pop up; click the Start button next to Apache. You will be prompted to enter your administrative username and/or password.
+          A little Control window will pop up; click the Start button next to Apache. You will be
+          prompted to enter your administrative username and/or password.
           <div class="screenshot">
             <img src="/book/media/img/xampp-control-mac.png" width="205" height="138" alt="Screenshot Mac OS X XAMPP Control window" />
             <p>
@@ -128,20 +187,176 @@ swdb_header($swdbpage);
             </p>
           </div>
         </li>
-        <li>Open your browser to <code>http://localhost/</code>; you should see the XAMPP splash page.</li>
         <li>
-          Now things get a little complex. This is more of an explanation than a step, so skip down if you’re not interested in an explanation. The <code>Applications</code> folder on a Mac is a restricted area of sorts, so it’s important to configure XAMPP to read from an <code>htdocs</code> folder than you can write to from your user account easily.
-        </li>
-        <li>Go to your home folder in a Finder window (look for the little house icon with your username next to it, and click it.</li>
-        <li>
-          In the Finder window, create a new <code>htdocs</code> folder (File &gt; New Folder from the Finder menu). Or, download and unzip the <a href="/book/rpk/">Rapid Prototyping Kit</a> and copy its <code>htdocs</code> folder to your home folder.
+          Open your browser to <code>http://localhost/</code>; you should see the XAMPP splash page.
+          If you are getting an error about another service using Port 80, see <a
+          href="#xampp-mac-error">the end of this document</a>.
         </li>
         <li>
-          Find your Terminal application; it's in the Utilities folder inside of Applications. Double-click to start it. Welcome to the command line.
+          Now things get a little complex. The <code>Applications</code> folder on a Mac is a
+          restricted area of sorts, so it’s important to configure XAMPP to read from an
+          <code>htdocs</code> folder than you can write to from your user account easily.
         </li>
         <li>
+          Go to your home folder in a Finder window; Look for the little house icon with your
+          username next to it, and click on it.
+        </li>
+        <li>
+          In the Finder window, create a new <code>htdocs</code> folder (File &gt; New Folder from
+          the Finder menu). Or, download and unzip the <a href="/book/rpk/">Rapid Prototyping
+          Kit</a> (RPK) and copy its <code>htdocs</code> folder to your home folder.
+        </li>
+        <li>
+          In your favorite text editor (like 
+          <a href="http://www.barebones.com/products/textwrangler/">TextWrangler</a>), create a new
+          text file and put a little line of text in it, like:
+          <pre>Hello there! This is just to test XAMPP.</pre>
+          Save the file as <code>hello.txt</code>, inside of the <code>htdocs</code> folder you
+          created or moved over from the RPK. The <code>hello.txt</code> will be for testing your
+          new XAMPP configuration.
+        </li>
+        <li>
+          Now use your text editor to open the XAMPP <code>httpd.conf</code> file. This contains the
+          Apache Web server configuration that XAMPP uses. Go to the <code>Applications</code>
+          folder, then <code>XAMPP</code>, then <code>etc</code>; you'll see <code>httpd.conf</code>
+          listed there. Open it.
+        </li>
+        <li>
+          Once you’ve opened the <code>httpd.conf</code> file, you should immediately make a copy of
+          it, just in case you make a mistake. Choose File &gt; Save As... in your editor, and save
+          the file as <code>httpd.conf.original</code>. You will probably be prompted for your
+          administrative username and password.
+        </li>
+        <li>
+          Then, choose File &gt; Save As... <em>again</em> and save as <code>httpd.conf</code>, so
+          that you’re back to editing the <code>httpd.conf</code> that XAMPP reads (and not the
+          <code>httpd.conf.original</code> file that you can use in an emergency).
+        </li>
+        <li>
+          Now to edit the <code>httpd.conf</code> file. Use the Find function in TextWrangler
+          (Search &gt; Find...) and search for the text <code>DocumentRoot</code> (one word, no
+          space). TextWrangler should take you to around line 174 of the <code>httpd.conf</code>
+          file, where you will see:
+          <pre class="term">#
+# DocumentRoot: The directory out of which you will serve your
+# documents. By default, all requests are taken from this directory, but
+# symbolic links and aliases may be used to point to other locations.
+#
+DocumentRoot "/Applications/XAMPP/xamppfiles/htdocs"
+
+#</pre>
+        </li>
+        <li>
+          Comment out the <code>DocumentRoot</code> line that’s there by putting a hash
+          (<code>#</code>) in front of it. Then, on the line below the one you comment out, write a
+          new DocumentRoot line, replacing <code>yourusername</code> as in the example below with
+          your real username on your Mac. The DocumentRoot part of your file should now look like
+          this:
+          <pre class="term"># DocumentRoot: The directory out of which you will serve your
+# documents. By default, all requests are taken from this directory, but
+# symbolic links and aliases may be used to point to other locations.
+#
+# DocumentRoot "/Applications/XAMPP/xamppfiles/htdocs"
+DocumentRoot "/Users/<strong>yourusername</strong>/htdocs"
+
+#</pre>
+        </li>
+        <li>
+          Next, scroll down a little further (about 30 lines) in the <code>httpd.conf</code>, where
+          you will see:
+          <pre class="term">#
+# This should be changed to whatever you set DocumentRoot to.
+#
+&lt;Directory "/Applications/XAMPP/xamppfiles/htdocs"&gt;
+    #
+    # Possible values for the Options directive are "None", "All",
+    # or any combination of:
+    #   Indexes Includes FollowSymLinks SymLinksifOwnerMatch ExecCGI MultiViews
+    #
+    # Note that "MultiViews" must be named *explicitly* --- "Options All"
+    # doesn't give it to you.
+    #
+
+</pre>
+        </li>
+        <li>
+          As you did with the DocumentRoot line, you’ll comment out the 
+          <code>&lt;Directory ...</code> line by inserting a hash (<code>#</code>) in front of it.
+          Start a new line below it, following the pattern of the line you commented out, and write
+          the same path you did in the DocumentRoot line above. This part of your file should now
+          look like:
+          <pre class="term">#
+# This should be changed to whatever you set DocumentRoot to.
+#
+# &lt;Directory "/Applications/XAMPP/xamppfiles/htdocs"&gt;
+&lt;Directory "/Users/<strong>yourusername</strong>/htdocs"&gt;
+    #
+    # Possible values for the Options directive are "None", "All",
+    # or any combination of:
+    #   Indexes Includes FollowSymLinks SymLinksifOwnerMatch ExecCGI MultiViews
+    #
+    # Note that "MultiViews" must be named *explicitly* --- "Options All"
+    # doesn't give it to you.
+    #
+
+</pre>
+        </li>
+        <li>
+          Save the file as <code>httpd.conf</code>; you might have to enter your administrative
+          username and password again.
+        </li>
+        <li>
+          Now the moment of truth: if you left XAMPP running, stop and then start it again from the
+          XAMPP Control window. Point your browser to <code>http://localhost/hello.txt</code>, the
+          text file you created; you should see your simple “Hello there! This is just to test
+          XAMPP.” message. If you do, go ahead and delete the <code>hello.txt</code> file. You are
+          now ready to start building your site, and testing it on a local web server.
         </li>
       </ol>
+      <p id="xampp-mac-error">
+        Some users may get an error from XAMPP that states another service is using Port 80 (Skype,
+        for example, is known to use that port.) If you get an error like that, open up the
+        <code>httpd.conf</code> file, and search for <code>Listen 80</code> using the find function.
+        Around line 30, you will find a block of text that looks like:
+      </p>
+      <pre class="term">#
+# Listen: Allows you to bind Apache to specific IP addresses and/or
+# ports, instead of the default. See also the &lt;VirtualHost&gt;
+# directive.
+#
+# Change this to Listen on specific IP addresses as shown below to 
+# prevent Apache from glomming onto all bound IP addresses.
+#
+#Listen 12.34.56.78:80
+Listen 80
+
+</pre>
+      <p>
+        Comment out the line that reads <code>Listen 80</code> by putting a hash (<code>#</code>) in
+        front of it; below that line, write your own line that reads <code>Listen 8000</code>. This
+        part of your file will now look like:
+      </p>
+      <pre class="term">#
+# Listen: Allows you to bind Apache to specific IP addresses and/or
+# ports, instead of the default. See also the &lt;VirtualHost&gt;
+# directive.
+#
+# Change this to Listen on specific IP addresses as shown below to 
+# prevent Apache from glomming onto all bound IP addresses.
+#
+#Listen 12.34.56.78:80
+#Listen 80
+<strong>Listen 8000</strong>
+
+</pre>
+      <p>
+        Start or stop and start XAMPP from its little Control window. Point your browser to
+        <code>http://localhost:8000/hello.txt</code>, and you should see your see your simple “Hello
+        there! This is just to test XAMPP.” message. If you do, go ahead and delete the
+        <code>hello.txt</code> file. Remember to use <code>http://localhost:8000/</code> instead of
+        <code>http://localhost/</code> when you’re developing your site.
+      </p>
+      
     </div>
 
     <!--<div id="supporting">
