@@ -473,6 +473,9 @@ ul#navigation li a {
           <pre class="pp">&lt;div class=&quot;photograph&quot;&gt;&#10;  &lt;!--Path to image in src=&quot;&quot;; match height and width to image--&gt;&#10;  &lt;img src=&quot;&quot; height=&quot;300&quot; width=&quot;400&quot; alt=&quot;Add alt text&quot; /&gt;&#10;  &lt;p class=&quot;caption&quot;&gt;&#10;    &lt;span class=&quot;access-label&quot;&gt;Photo caption: &lt;/span&gt;&#10;    &#10;    Image description....&#10;    &#10;  &lt;/p&gt;&#10;&lt;/div&gt;</pre>
           </li>
           <li>Figure 18.1: <a href="/book/examples/18/photos.htm">Example presentation of a photograph and caption</a> (p. 229)</li>
+
+          <!--Audio and video examples-->
+
         </ul>
         </div>
       <h2>Chapter 19: Performance and Interaction</h2>
@@ -502,6 +505,10 @@ ul#navigation li a {
         <h3>Websites</h3>
         <ul>
           <li><a href="http://www.apachefriends.org/en/faq-xampp.html">XAMPP</a> (Development Web server documentation)</li>
+        </ul>
+        <h3>Examples</h3>
+        <ul>
+          <li><a href="/book/resources/xampp/">Setting Up XAMPP (simplified instructions)</li>
         </ul>
         </div>
       <h2>Chapter 21: Reusing and Dynamically Generating Content</h2>
