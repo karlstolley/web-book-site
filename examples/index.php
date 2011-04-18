@@ -547,6 +547,50 @@ $(document).ready(function()
 div#page { width: 700px; } /*Width on small and/or JavaScriptless screens*/
 body.widescreen div#page { width: 1000px; } /*Widescreen width*/</pre>
             </li>
+            <li><a href="/book/examples/19/external-links.htm">DOM scripting for external links</a> (p. 243-244):
+            <pre class="pp lang-js">/*JavaScript*/
+$(document).ready(function()
+  {
+    $('div#content a[href^=http\\:\\/\\/]').addClass('ext');
+  }
+);</pre>
+            <pre class="pp lang-css">/*CSS*/
+a { color: blue; } /*Color links blue*/
+a.ext { color: red; } /*Color external links red*/</pre>
+            </li>
+            <li><a href="/book/examples/19/animation.htm">DOM Scripting and animation</a> (p. 244-246):
+            <pre class="pp lang-js">/*JavaScript*/
+$(document).ready(function() {
+  /*Set margin-right for jQuery manipulation:*/
+  $('ul#navigation a').css('margin-right','30px');
+  /*Navigation hover function:*/
+  $('ul#navigation a').hover( function() 
+    {
+      $(this).animate( { "margin-right": 0 } , "slow");
+    }, function() {
+      $(this).animate( { "margin-right": 30 } , "slow");
+    }
+  );
+});</pre>
+            </li>
+            <li><a href="/book/examples/19/animation-improved.htm">DOM Scripting and animation
+            improved</a> (disable <a href="http://api.jquery.com/animate/">animation queing</a> so
+            that navigation doesn’t continue to expand and contract again and again; speed up
+            animation):
+            <pre class="pp lang-js">/*JavaScript*/
+$(document).ready(function() {
+  /*Set margin-right for jQuery manipulation*/
+  $('ul#navigation a').css('margin-right','30px');
+  /*Navigation hover function:*/
+  $('ul#navigation a').hover( function() 
+    {
+      $(this).animate( { "margin-right": 0 } , <strong>{queue: false, duration: "fast" }</strong>);
+    }, function() {
+      $(this).animate( { "margin-right": 30 } , <strong>{ queue: false, duration: "fast" }</strong>);
+    }
+  );
+});</pre>
+            </li>
           </ul>
         </div>
       </div>
@@ -565,7 +609,7 @@ body.widescreen div#page { width: 1000px; } /*Widescreen width*/</pre>
         </ul>
         <h3>Examples</h3>
         <ul>
-          <li><a href="/book/resources/xampp/">Setting Up XAMPP (simplified instructions)</li>
+          <li><a href="/book/resources/xampp/">Setting Up XAMPP</a> (simplified instructions)</li>
         </ul>
         </div>
       <h2>Chapter 21: Reusing and Dynamically Generating Content</h2>

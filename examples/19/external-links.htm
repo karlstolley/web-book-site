@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>DOM Scripting Demo</title>
+  <!--Link to the jQuery library at GoogleAPIs:-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+  <!--Custom JavaScript using jQuery:-->
+  <script type="text/javascript">
+    $(document).ready(function()
+      {
+        $('div#content a[href^=http\\:\\/\\/]').addClass('ext');
+      }
+    );
+  </script>
+  <style type="text/css" media="screen">
+    a { color: blue; } /*Color links blue*/
+    a.ext { color: red; } /*Color external links red*/
+  </style>
+</head>
+<body>
+
+<div id="header">
+  <h1>Coloring External Links</h1>
+</div>
+
+<div id="content">
+  <p>
+    If you have JavaScript enabled, these external links to <a href="http://www.google.com">Google</a>, <a href="http://www.cnn.com/">CNN</a>, and <a href="http://www.whitehouse.gov">The White House</a> will be colored red; internal links <a href="#such">such</a> <a href="#as">as</a> <a href="#these">these</a> will be colored blue.
+  </p>
+</div>
+</body>
+</html>
