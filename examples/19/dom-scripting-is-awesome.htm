@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>DOM Scripting Demo</title>
+  <!--Link to the jQuery library at GoogleAPIs:-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+  <!--Custom JavaScript using jQuery:-->
+  <script type="text/javascript">
+    $(document).ready(function()
+      {
+        $('div#header h1').html('DOM Scripting Is Awesome!');
+      }
+    );
+  </script>
+</head>
+<body>
+
+<div id="header">
+  <h1>JavaScript Is Not Enabled</h1>
+</div>
+
+<p>
+  This is a sort of useless demo of DOM Scripting. If you have JavaScript enabled, you’ll see “DOM
+  Scripting is Awesome” in the heading one tag above; without JavaScript, you’ll see “JavaScript Is
+  Not Enabled.”
+</p>
+
+</body>
+</html>

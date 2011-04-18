@@ -480,17 +480,74 @@ ul#navigation li a {
         </div>
       <h2>Chapter 19: Performance and Interaction</h2>
         <div class="chapter">
-          <!--Libraries under Downloads and Utilities?-->
-          <h3>Websites</h3>
+          <h3>Downloads and Utilities</h3>
           <ul>
             <li><a href="http://jquery.com">jQuery</a> (JavaScript library)</li>
+            <li><a href="http://plugins.jquery.com">jQuery Plugins</a> (JavaScript library plugins)</li>
+          </ul>
+          <h3>Websites</h3>
+          <ul>
             <li><a href="http://docs.jquery.com">jQuery Docs</a> (JavaScript library documentation)</li>
             <li><a href="http://api.jquery.com">jQuery API</a> (JavaScript library API documentation)</li>
-            <li><a href="http://plugins.jquery.com">jQuery Plugins</a> (JavaScript library plugins)</li>
             <li><a href="http://mootools.net/">MooTools</a> (JavaScript library)</li>
             <li><a href="http://prototypejs.org/">Prototype</a> (JavaScript library)</li>
             <li><a href="http://code.google.com/apis/libraries/devguide.html">Google Libraries API</a> (Google-hosted libraries)</li>
-          </ul>          
+          </ul>
+          <h3>Examples</h3>
+          <ul>
+            <li>The jQuery Ready Event (p. 237-238): 
+            <pre class="pp lang-js">/*JavaScript*/
+$(document).ready(function()
+  {
+    /*Scripts are written here to run
+    once the DOM has been loaded.*/
+  }
+);</pre>
+            </li>
+            <li>“<a href="/book/examples/19/dom-scripting-is-awesome.htm">DOM Scripting is Awesome</a>” (p. 238-239):
+            <pre class="pp lang-js">/*JavaScript*/
+$(document).ready(function()
+  {
+    $('div#header h1').html('DOM Scripting Is Awesome!');
+  }
+);</pre>
+            </li>
+            <li><a href="/book/examples/19/hasjs.htm">Is JavaScript Available?</a> (p. 239-240):
+            <pre class="pp lang-js">/*JavaScript*/
+$(document).ready(function()
+  {
+    $('body').addClass('hasjs');
+  }
+);</pre>
+<pre class="pp lang-css">/*CSS*/
+p { color: black; }
+body.hasjs p { color: red; } /*As a demonstration, make 
+                             paragraphs red when JavaScript
+                            is active.*/</pre>
+            </li>
+            <li>Figure 19.1: <a href="/book/examples/17/19/my-prototype.htm">Layout from Chapter 17 without JavaScript enhancement</a> (p. 241)</li>
+            <li><code>rpkwidescreen()</code> function (p. 240-241)
+            <pre class="pp lang-js">/*JavaScript*/
+function rpkwidescreen() {
+  var rpkwidth = $(window).width();
+  if(rpkwidth>1100) { $('body').addClass('widescreen'); }
+  else { $('body').removeClass('widescreen'); }
+}</pre>
+            </li>
+            <li>Figure 19.2: <a href="/book/examples/19/02/my-prototype.htm">Layout with <code>widescreen</code> class and CSS</a> (p. 241-243)
+            <pre class="pp lang-js">/*JavaScript*/
+$(document).ready(function()
+  {
+    $('body').addClass('hasjs');
+    rpkwidescreen(); /*Run once the DOM has loaded*/
+    $(window).resize(rpkwidescreen); /*Run on any resizing of the browser window*/
+  }
+);</pre>
+            <pre class="pp lang-css">/*CSS*/
+div#page { width: 700px; } /*Width on small and/or JavaScriptless screens*/
+body.widescreen div#page { width: 1000px; } /*Widescreen width*/</pre>
+            </li>
+          </ul>
         </div>
       </div>
 

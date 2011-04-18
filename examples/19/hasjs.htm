@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>DOM Scripting Demo</title>
+  <!--Link to the jQuery library at GoogleAPIs:-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+  <!--Custom JavaScript using jQuery:-->
+  <script type="text/javascript">
+    $(document).ready(function()
+      {
+        $('body').addClass('hasjs');
+      }
+    );
+  </script>
+  <style type="text/css" media="screen">
+    body.hasjs p { color: red; } /*Color the paragraph text red when JavaScript is available.*/
+    body.hasjs p code { color: black; } /*Keep code black though*/
+  </style>
+</head>
+<body>
+
+<div id="header">
+  <h1>Is JavaScript Available?</h1>
+</div>
+
+<p>
+  This page uses DOM scripting to add a class of <code>hasjs</code> on the <code>&lt;body&gt;</code>
+  tag. A CSS style, <code>body.hasjs p { color: red; }</code>, makes the paragraph text appear
+  colored red.
+</p>
+
+</body>
+</html>
