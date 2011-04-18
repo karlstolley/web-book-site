@@ -44,7 +44,8 @@ $('div#content a[href^=http<strong>\\:\\/\\/</strong>]').addClass('ext');</pre>
         </li>
         <li><strong>Page 244</strong>: The CSS style declaration at the bottom of the page should  refer to <code>margin-right</code>. Here is the corrected version, with the correction highlighted:
         <pre class="pp lang-css">ul#navigation a { margin-right: 30px; }
-    ul#navigation a:hover { <strong>margin-right</strong>: 0px; }</pre>
+ul#navigation a:hover { <strong>margin-right</strong>: 0px; }</pre>
+        </li>
         <li>That’s all for now. Find a mistake that needs to be corrected? <a href="/book/contact/">Let me know</a>.</li>
       </ul>
     </div>
