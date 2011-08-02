@@ -37,7 +37,7 @@ swdb_header($swdbpage);
         <li><a href="http://htmldog.com/reference/cssproperties/">HTML Dog CSS Properties</a></li>
         <li><a href="http://reference.sitepoint.com/css">SitePoint CSS Reference</a></li>
         <li><a href="http://validator.w3.org">W3C Markup Validation Service</a>: XHTML/HTML validator</li>
-        <li><a href="http://jigsaw.w3.org/cssvalidator/">W3C CSS Validation Service</a>: CSS validator</li>
+        <li><a href="http://jigsaw.w3.org/css-validator/">W3C CSS Validation Service</a>: CSS validator</li>
       </ul>
       <p class="warning"><strong>Do not use materials found at W3Schools</strong>. See the standards-based design community’s <a href="http://w3fools.com">response to W3Schools at w3fools.com</a>, which notes <a href="http://w3fools.com#why-w3schools-sucks">some examples of inaccuracies in W3School’s materials</a>.</p>
       <p><strong>Mac OS X users</strong> should download and install these:</p>
@@ -116,7 +116,7 @@ swdb_header($swdbpage);
         <li><a href="http://www.section508.gov/">Section 508</a>: United States government IT accessibility</li>
         <li><a href="http://access-board.gov/sec508/standards.htm">Section 508 guidelines and standards</a>: United States Access Board</li>
         <li><a href="http://validator.w3.org">W3C Markup Validation Service</a>: XHTML/HTML validator</li>
-        <li><a href="http://jigsaw.w3.org/cssvalidator/">W3C CSS Validation Service</a>: CSS validator</li>
+        <li><a href="http://jigsaw.w3.org/css-validator/">W3C CSS Validation Service</a>: CSS validator</li>
         <li><a href="http://www.w3.org/WAI/">Web Accessibility Initiative (WAI)</a>: W3C organization</li>
         <li><a href="http://www.w3.org/WCAG/">Web Content Accessibility Guidelines (WCAG)</a>: W3C recommendation</li>        <li><a href="http://www.webstandards.org/">Web Standards Project (WaSP)</a>: Standards advocacy and education group</li>
         <li><a href="http://www.w3.org/">World Wide Web Consortium (W3C)</a>: Group behind the recommendations that make up many Web standards</li>
