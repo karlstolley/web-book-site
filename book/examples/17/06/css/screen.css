@@ -1,0 +1,233 @@
+/* screen.css: Screen Styles */
+
+/* Styles from the example in Figure 17.6 */
+ul#navigation {
+  width: 200px; 
+  position: absolute;
+  right: 0px; /*Keep with RIGHT edge of design*/
+  top: 95px;
+}
+div#content {
+  margin-right: 225px; /*200px nav + 25px on the RIGHT between navigation and content*/
+  margin-top: 10px;
+}
+
+
+/* Styles from earlier examples in Chapter 17 */
+div#header {
+  height: 85px; /*Set a specific height on header; will use images from Ch. 14*/
+}
+
+/* 
+  Illustrative background colors to aid in positioning; these
+  will be removed eventually, and replaced with the actual
+  page design:
+*/
+
+div#header { background-color: red; }
+div#main { background-color: yellow; }
+div#supporting { background-color: green; }
+ul#navigation { background-color: #CCC; }
+div#footer { background-color: blue; }
+
+/*
+  NOTE: CSS background images will disappear when CSS > Edit CSS is activated in the 
+  Web Developer Add-on; add css/ in front of gfx/ to see it with the Add-on, e.g.,
+  background-image: url('css/gfx/header-titled-background.png);
+*/
+
+/*Styles below from Style Guide in Chapter 16*/
+
+/* Base Styles */
+
+/* Bold on headings, b, and strong */
+h1,h2,h3,h4,h5,h6,b,strong { font-weight: bold; }
+/* Italic on i, em, and cite: */
+i,em,cite { font-style: italic; }
+/* Dotted border and help cursor to abbr and acronym: */
+abbr,acronym { border-bottom: 1px dotted; cursor: help; }
+
+/* Body */
+
+body {
+}
+
+/* Major Divisions */
+
+/* Page (Containing Div) */
+div#page {
+}
+
+/* Header */
+div#header {
+}
+div#header h1 {
+}
+div#header h1 a {
+}
+div#header p.tagline {
+}
+div#header ul.accessibility {
+  position: absolute;
+  left: -10000px;
+}
+
+/* Content */
+div#content {
+}
+
+div#main {
+}
+
+div#supporting {
+}
+
+/* Footer */
+div#footer {
+}
+div#footer p.credits {
+  font-style: italic;
+}
+div#footer ul.validators {
+}
+div#footer ul.validators li {
+}
+
+/*Navigation*/
+ul#navigation {
+}
+
+ul#navigation li {
+}
+
+ul#navigation li a {
+}
+
+ul#navigation li a:visited {
+}
+
+ul#navigation li a:hover,
+ul#navigation li a:focus {
+}
+
+
+/* Content Typography: Shared Styles */
+div#content {
+  font-family: Arial, sans-serif;
+  font-size: small;
+  line-height: 1.6;
+}
+
+div#content p,
+div#content ul,
+div#content ol {
+  padding-bottom: 1em;
+}
+
+/*Content Typography: Headings*/
+div#content h2,
+div#content h3 { 
+  font-family: Georgia, "Times New Roman", serif; 
+}
+div#content h2 {
+  font-size: 150%;
+}
+div#content h3 {
+  margin-top: .5em;
+  font-size: 125%;
+  border-bottom: 1px solid #666;
+}
+div#content h4 {
+}
+div#content h5 {
+}
+div#content h6 {
+}
+
+/*Content Typography: Paragraphs*/
+div#content p {
+  text-indent: 20px;
+}
+div#content h2 + p {
+  font-weight: bold;
+  text-indent: 0px;
+}
+div#content h3 + p {
+  text-indent: 0px;
+}
+
+/* Content Typography: Blockquotes and Pullquotes*/
+div#content blockquote {
+  border: 1px solid black;
+  background-color: #DDD;
+  margin: 20px;
+}
+div#content blockquote p {
+  text-indent: 0px;
+  padding: 10px;
+  margin: 0px;
+}
+
+div#content p.pullquote {
+  text-indent: 0px;
+  font-size: 150%;
+  border: 1px dotted #999;
+  padding: 20px;
+}
+
+/*Content Typography: Unordered Lists*/
+div#content ul {
+  margin-left: 40px;
+}
+div#content ul li {
+  list-style-type: disc;
+}
+/*Nested*/
+div#content * li ul {
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+div#content * li ul li {
+  list-style-type: circle; 
+}
+
+/*Content Typography: Ordered Lists*/
+div#content ol {
+  margin-left: 40px;
+}
+div#content ol li {
+  list-style-type: decimal;
+}
+/*Nested*/
+div#content * li ol {
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+div#content * li ol li {
+  list-style-type: upper-alpha;
+}
+
+/*Phrases*/
+div#content code { background-color: #DDD; }
+
+/*Content Typography: Links*/
+div#content a {
+  font-weight: bold;
+}
+div#content a:visited {
+}
+div#content a:hover,
+div#content a:focus {
+}
+div#content a.ext { font-weight: normal; }
+/*Supporting*/
+div#supporting h2 + p { font-weight: normal; }
+
+/*
+
+CSS FOR THIS EXAMPLE IS AT THE TOP OF THIS FILE. SCROLL ALL THE WAY UP!
+
+*/
+
+
+

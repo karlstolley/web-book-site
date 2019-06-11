@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="sustainablewebdesign-com-book">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Rapid Prototyping Kit (RPK): How to Design and Write Web Pages Today</title>
+
+  <link rel="stylesheet" type="text/css" media="screen, print" href="/book/css/reset.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/book/css/screen.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/book/css/edge.css" />
+  <!--[if lte IE 7>
+  <link rel="stylesheet" type="text/css" media="screen" href="/book/css/screen-ie.css" />
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" media="print" href="/book/css/print.css" />
+
+  <meta name="description" content="The Rapid Prototyping Kit used in How to Design and Write Web Pages Today." />
+
+  <link rel="image_src" href="https://sustainablewebdesign.com/book/media/img/share-thumbnail.png" />
+
+<!--REMOVE COMMENT TAGS TO USE FAVICON LINKS:-->
+
+  <!--For most browsers:-->
+  <link rel="icon" href="https://sustainablewebdesign.com/book/favicon.png" type="image/png" />
+
+  <!--For Internet Explorer:-->
+  <link rel="shortcut icon" href="https://sustainablewebdesign.com/book/favicon.ico" />
+
+  <!--Load the Google Prettify library-->
+  <script type="text/javascript" src="/book/js/prettify.js"></script>
+  <!--Load the jQuery library-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+  <!--Load site-wide JavaScript-->
+  <script type="text/javascript" src="/book/js/site.js"></script>  <!--Page-specific JavaScript, e.g., for use with SWFObject-->
+  <script type="text/javascript">
+  /*Page-specific JavaScript*/
+  
+  </script>
+
+</head>
+
+<body class="rpk">
+<div id="header">
+  <h1><a href="https://sustainablewebdesign.com/book/" rel="home">How to Design
+    and Write Web Pages Today</a></h1>
+  <ul class="accessibility">
+    <li><a href="#navigation">Jump to Navigation</a></li>
+    <li><a href="#content">Jump to Content</a></li>
+  </ul>
+</div>
+<div id="page">  <div id="promo">
+    <div class="summary">
+      <h2>Rapid Prototyping Kit (RPK)</h2>
+      <p>
+        The Rapid Prototyping Kit is a set of starter files and folders to get your site built quickly according to Web standards and best practices.
+      </p>
+    </div>
+    <!--
+      <div class="feature">
+      </div>
+    -->
+  </div>
+
+  <div id="content">
+
+    <div id="main">
+      <h2>Download Options</h2>
+      <p>
+        You can download the RPK in a few of different forms; all are in <code>.zip</code> format,
+        so <a href="http://www.7-zip.org/download.html">you might need 7-zip</a> to open them on
+        your computer if it has no archiving program. <strong>Here are the three versions used in
+        the book</strong>, which match the content of the book and will always be available here:
+      </p>
+      <ul>
+        <li><a href="/book/rpk/rpk.zip">rpk.zip</a>: Basic XHTML version of the RPK used throughout
+        most of the book (see Chapters 9-19)</li>
+        <li><a href="/book/rpk/rpk-php.zip">rpk-php.zip</a>: PHP-based version of the RPK (see
+        Chapter 21)</li>
+        <li>Coming soon: <a href="/book/rpk/#rpk-wp.zip">rpk-wp.zip</a>: WordPress-theme version of the
+        RPK for use with WordPress version 3.1 (see Chapter 22)</li>
+      </ul>
+      <p class="warning">
+        <strong>The RPK HTML files use root-relative paths to load CSS and JavaScript.</strong> They
+        were created for use with a local development Web server and the
+        <code>http://localhost/</code> URL; <a href="/book/resources/xampp/">set one up yourself
+        with XAMPP</a>. If you are opening your files directly in the browser, you must change the
+        root-relative paths to relative (see Chapter 20 in the book for more on paths). For example,
+        instead of <code>href="/css/screen.css"</code>, remove the slash so it reads
+        <code>href="css/screen.css"</code>. Use your text editor to do a search and replace in the
+        prototype HTML files; search for <code>="/</code> and replace with <code>="</code>. You will
+        have to alter those relative paths if you start building a folder-oriented site
+        architecture. (Again, you're better off <a href="/book/resources/xampp/">setting up
+        XAMPP</a>.)
+      </p>
+      <p>
+        Each of those versions of the RPK includes version 1.5.1 of <a
+        href="http://jquery.com">jQuery</a> and <a
+        href="http://code.google.com/p/swfobject/">SWFObject</a> version 2.2. Consider upgrading
+        those as new versions are released. Test your site locally using 
+        <a href="http://www.apachefriends.org/en/xampp.html">XAMPP</a> before uploading to
+        your live site to make sure that everything works.
+      </p>
+      <h2>Other Download Options</h2>
+      <p>
+        Adventurous writer/designers can download <a
+        href="/book/rpk/rpk-html5.zip">rpk-html5.zip</a>, which is an HTML5 version of the RPK.
+        The only differences from the XHTML version of the RPK are:
+      </p>
+        <ul>
+          <li>The DOCTYPE declaration is <code>&lt;!DOCTYPE html&gt;</code></li>
+          <li>The <code>&lt;html&gt;</code> tag is simplified to  <code>&lt;html lang="en" id="example-com"&gt;</code></li>
+          <li>The UTF-8 character set is specified via the new <code>&lt;meta charset="utf-8" /&gt;</code> syntax</li>
+          <li>The validator link in the footer refers to HTML5</li>
+        </ul>
+      <p>
+        Everything else is essentially the same in the HTML5 version as the basic XHTML version of
+        the RPK, meaning that your CSS and JavaScript developed with the XHTML version should work
+        seamlessly with it.
+      </p>
+      <p>
+        For even more adventurous writers/designers, you can <a
+        href="http://github.com/karlstolley/rpk">browse and download</a> newer versions of the
+        different RPKs at <a href="http://github.com/">GitHub</a>. Those versions may differ from
+        what’s in the book.
+      </p>
+      
+    </div>
+
+  <!--
+    <div id="supporting">
+    </div>
+  -->
+  </div>
+
+<!--Close #page-->
+</div>
+<div class="nav">
+  <ul id="navigation">
+    <li id="nav-home"><a href="/book/" title="Companion site overview">Home</a></li>
+    <li id="nav-rpk"><a href="/book/rpk/" title="Rapid Prototyping Kit downloads">RPK</a></li>
+    <li id="nav-examples"><a href="/book/examples/" title="Examples from the book">Examples</a></li>
+    <li id="nav-resources"><a href="/book/resources/" title="Additional resources and reference material">Resources</a></li>
+    <li id="nav-updates"><a href="/book/updates/" title="Updates and corrections to the book">Updates</a></li>
+    <li id="nav-contact"><a href="/book/contact/" title="Get in touch with the author">Contact</a></li>
+  </ul>
+</div>
+
+  <div id="footer">
+    <div id="book">
+      <h2>About the Book</h2>
+      <img src="/book/media/img/book-thumb.png" height="315" width="232" alt="Cover of How to Design and Write Web Pages Today" />
+      <p><em>From the publisher, Greenwood Press</em>: An introduction to standards-based Web design, this book treats creating a website from the point of view of the writer, focusing on writing concerns and how they fit with the technological challenges of the Web. Readers will learn about the reasons for writing on the Web; the challenges of writing there; and the solid, but flexible construction of individual pages. The focus is on building websites that can grow, including sites built around the popular, open-source WordPress blogging system. Rich with examples, the book demonstrates that Web writing and design can be fast and fun—and accomplished without expensive software or sophisticated programming skills.</p>
+    </div>
+    <div id="siteinfo">
+      <p class="credits">
+        Site content and design by <a href="http://karlstolley.com/">Karl Stolley</a>. Licensed for   use under
+        <a href="http://creativecommons.org/licenses/by/3.0/" rel="license">Creative Commons</a>.
+      </p>
+      <ul class="validators">
+        <li><a href="http://validator.w3.org/check?uri=referer"
+          title="Validate this page’s XHTML">XHTML</a></li>
+        <li><a href="http://jigsaw.w3.org/css-validator/check/referer"
+          title="Validate this page’s CSS">CSS</a></li>
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22113980-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+</body>
+</html>

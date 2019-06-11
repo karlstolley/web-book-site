@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="example-com">
+
+<head>
+
+<!--This file uses a simplifed <head> area from the RPK-->
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Style Guide: Jane Smith</title>
+
+  <link rel="stylesheet" type="text/css" media="screen, print" href="/book/css/reset.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+
+</head>
+
+<body>
+
+<div id="page">
+
+  <div id="header">
+    
+    <!--Link disabled with a hash (#)-->
+    <h1><a href="#http://example.com/" rel="home">Jane Smith</a></h1>
+
+    <p class="tagline">
+      Working hard to build a Web site.
+    </p>
+
+    <ul class="accessibility">
+      <li><a href="#navigation">Jump to Navigation</a></li>
+      <li><a href="#content">Jump to Content</a></li>
+    </ul>
+
+  </div>
+
+  <div id="content">
+
+    <div id="main">
+      <h2>Site Style Guide (<code>h2</code>)</h2>
+      
+      <p>
+        This is a guide to the page content styles for the site; this is
+        paragraph that comes immediately after a heading two tag. 
+        (<code>h2 + p</code>)
+      </p>
+      
+      <p>
+        All content samples have their CSS selector/XHTML elements 
+        listed at the very end of the content they mark. In some places,
+        such as this paragraph, additional content is 
+        <a href="http://lipsum.com">lorem ipsum</a> or “Greeked” text. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed 
+        molestie aliquet varius. Morbi vitae nibh augue, ac mollis 
+        felis. Fusce sed lacus eget nisl facilisis accumsan sed et eros.
+        Fusce sagittis pellentesque lectus, eget vestibulum neque tempus
+        at. (<code>p</code>)
+      </p>
+
+      <ul>
+        <li>
+          Unordered/bulleted lists (<code>ul</code>) make text more 
+          readable (<code>ul li</code>)
+        </li>
+        <li>Lists can also have nested lists, which:
+          <ul>
+            <li>
+              Break up complex information into simpler parts 
+              (<code>ul li ul li</code>)
+            </li>
+            <li>
+              Give readers a way to scan complex information, and 
+              skip things that are not relevant
+            </li>
+          </ul>
+        </li>
+        <li>
+          List items (<code>li</code>) must be contained by an ordered
+          or unordered list)
+        </li>
+      </ul>
+      
+      <p>
+        Another paragraph. Nullam pretium sodales lorem porta interdum. 
+        Fusce ac sapien eu velit blandit euismod at porta elit. Ut 
+        bibendum aliquet placerat. Fusce a justo nunc, quis dignissim 
+        velit. Duis placerat dictum nisl, id tincidunt leo fermentum ac.
+        Mauris est sapien, luctus vel pretium in, hendrerit quis ante. 
+        Maecenas quam sem, tincidunt eu rhoncus a, vehicula a neque.
+      </p>
+
+      <ol>
+        <li>
+          Ordered/numbered lists (<code>ol</code>) contain information 
+          in sequence; this is first.
+        </li>
+        <li>This is second, with two ordered sub-points:
+          <ol>
+            <li>Point one (<code>ol li ol li</code>)</li>
+            <li>Point two</li>
+          </ol>
+        </li>
+        <li>This is third, with two unordered sub-points:
+            <ul>
+              <li>Here’s a point (<code>ol li ul li</code>)</li>
+              <li>Here’s another point</li>
+            </ul>
+        </li>
+      </ol>
+      <p>
+        Another paragraph. Vestibulum tempor pretium nisl, sed euismod 
+        arcu scelerisque vel. Cum sociis natoque penatibus et magnis dis 
+        parturient montes, nascetur ridiculus mus. Nam nisl sem, 
+        facilisis eu adipiscing vel, euismod vel nibh. Proin non blandit 
+        sapien.
+      </p>
+      <h3>Page Content Sub-Heading (<code>h3</code>)</h3>
+      <p>
+        A paragraph immediately following a heading three tag. Curabitur 
+        id felis felis. Praesent scelerisque, arcu at molestie 
+        fringilla, dui nunc tempor lectus, at euismod ipsum libero vel 
+        turpis. Integer ultricies pharetra dapibus. Ut ac nisl sapien. 
+        (<code>h3 + p</code>)
+      </p>
+      
+      <h3>Phrase Tags</h3>
+      <p>
+        A paragraph that features some phrase tags: 
+        <strong>Some text is strong.</strong> (<code>strong</code>).
+        <em>Some text is emphasized</em> (<code>em</code>). 
+        <code>/*Some text is code*/</code> (<code>code</code>). 
+        <a href="#null">Some text is linked to elsewhere in the site</a>
+        (<code>a</code>). 
+        <a class="ext" href="http://www.mozilla.com/">Some text links to 
+        external sites, like the Mozilla Foundation</a> 
+        (<code>a.ext</code>). Cras laoreet cursus orci ac hendrerit. 
+        Nulla nulla mi, rutrum vitae viverra consectetur, pretium id 
+        eros. Donec eget condimentum nulla.
+      </p>
+      
+      <h3>Block Quotes and Pull Quotes</h3>
+      
+      <blockquote>
+        <p>
+          This is a paragraph treated as a block quote. Fusce ac 
+          sapien eu velit blandit euismod at porta elit. Ut bibendum 
+          aliquet placerat. Fusce a justo nunc, quis dignissim 
+          velit. (<code>blockquote</code> and 
+          <code>blockquote p</code>).
+        </p>
+      </blockquote>
+
+      <p class="pullquote">
+        Pullquotes can serve to emphasize certain text components and 
+        add interest to an otherwise mammoth page of text. 
+        (<code>p.pullquote</code>)
+      </p>
+    </div>
+    <div id="supporting">
+      <h2>Supporting Content Header (<code>div#supporting h2</code>)</h2>
+      <p>
+        Supporting content paragraph. Cum sociis natoque penatibus et 
+        magnis dis parturient montes, nascetur ridiculus mus. Nam nisl 
+        sem, facilisis eu adipiscing vel, euismod vel nibh. Proin non 
+        blandit sapien. (<code>div#supporting p</code>)
+      </p> 
+    </div>
+
+  </div>
+
+  <ul id="navigation">
+    <li><a id="nav-home" href="#/">Home</a></li>
+    <li><a id="nav-resume" href="#/resume.htm">Resume</a></li>
+    <li><a id="nav-portfolio" href="#/portfolio.htm">Portfolio</a></li>
+    <li><a id="nav-about" href="#/about.htm">About</a></li>
+    <li><a id="nav-contact" href="#/contact.htm">Contact</a></li>
+  </ul>
+
+  <div id="footer">
+    <p class="credits">
+      Page design and content by Jane Smith. Content licensed under <a href="http://creativecommons.org/licenses/by/3.0/" rel="license">Creative Commons</a>.
+      <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"><img alt="Creative Commons License" src="media/img/cc-80x15.png" /></a>
+    </p>
+    <!--These links only work on live, web-available sites:-->
+    <ul class="validators">
+      <li><a href="http://validator.w3.org/check?uri=referer"
+        title="Validate this page's XHTML">XHTML</a></li>
+      <li><a href="http://jigsaw.w3.org/css-validator/check/referer"
+        title="Validate this page's CSS">CSS</a></li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+
+</html>

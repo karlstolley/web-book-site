@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="example-com">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Photos: Jane Smith</title>
+
+  <link rel="stylesheet" type="text/css" media="screen, print" href="css/reset.css" />
+
+  <!--
+    CSS in the <style> tag; this is useful for quick experiments, such as coming
+    up with things like image presentation. Eventually, this CSS would be copied
+    into the screen.css file, and the <style> tag and its contents here would be
+    removed:
+  -->
+  <style type="text/css" media="screen">
+    div.photograph {
+      background: #777; /*Photos often show up well against darker backgrounds*/
+      color: white; /*White text*/
+      width: 678px; /*Allow for padding (20px total) and border (2px total) to total 700px*/
+      min-height: 300px; /*Minimum height that matches the height of the photograph;
+                           a height: property would have to be passed to IE*/
+      padding: 10px; /*Add a bit of padding*/
+      border: 1px solid #666; /*Add a little border around this div*/
+    }
+    div.photograph img { 
+      border: 1px solid black; /*Give definition to lighter edges of photos*/
+      float: left; /*Float image to allow text to appear alongside of it; requires min-height above*/
+      margin-right: 10px; /*Keep caption text away from the image*/
+      margin-bottom: 10px; /*Also away from the bottom, should the text wrap around*/
+    }
+    div.photograph p.caption {
+      font-size: medium;
+      font-weight: bold;
+    }
+    
+    html { 
+      background: #CCC;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+    div#page { margin: 10px; }
+    .access-label {
+      display: block;
+      position: absolute;
+      left: -10000px;
+    }
+  </style>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+  <!--[if lte IE 7>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/screen-ie.css" />
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+
+  <!--Load the jQuery library-->
+  <script type="text/javascript" src="js/jquery/jquery.js"></script>
+  <!--Load site-wide JavaScript-->
+  <script type="text/javascript" src="js/site.js"></script>
+  <!--Load SWFObject for working with Flash media; uncomment to load.-->
+<!--
+  <script type="text/javascript" src="js/swfobject/swfobject.js"></script>
+-->
+  <!--Page-specific JavaScript, e.g., for use with SWFObject-->
+  <script type="text/javascript">
+  /*Page-specific JavaScript*/
+  </script>
+
+</head>
+
+<body>
+
+<div id="page">
+
+  <div id="content">
+
+    <div id="main">
+      <div class="photograph">
+      <img src="media/img/jefferson.jpg" height="300" width="400" alt="Photo of the Jefferson Memorial" />
+      <p class="caption">
+        <span class="access-label">Photo caption:</span> We took this photograph
+        of the Jefferson Memorial during our visit to Washington, D.C. in November of 2010.
+      </p>
+    </div>
+      
+    </div>
+
+</div>
+
+</body>
+
+</html>

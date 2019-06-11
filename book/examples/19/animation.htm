@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>DOM Scripting Demo</title>
+  <!--Link to the jQuery library at GoogleAPIs:-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+  <!--Custom JavaScript using jQuery:-->
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('ul#navigation a').css('margin-right','30px'); /*Set margin-right for jQuery manipulation*/
+    $('ul#navigation a').hover( function() {
+      $(this).animate( { "margin-right": 0 } , "slow");
+    }, function() {
+      $(this).animate( { "margin-right": 30 } , "slow");
+    }
+    );
+  });
+  </script>
+  <!--Reset CSS-->
+  <link rel="stylesheet" type="text/css" media="screen" href="/book/css/reset.css" />
+  <style type="text/css" media="screen">
+    ul#navigation li { width: 200px; }
+    ul#navigation a {
+      display: block;
+      background-color: red;
+      padding: 20px;
+      color: white;
+      text-decoration: none;
+    }
+    ul#navigation a { margin-right: 30px; }
+    ul#navigation a:hover { margin-right: 0px; }
+  </style>
+</head>
+<body>
+
+<ul id="navigation">
+  <li><a id="nav-home" href="#/">Home</a></li>
+  <li><a id="nav-resume" href="#/resume.htm">Resume</a></li>
+  <li><a id="nav-portfolio" href="#/portfolio.htm">Portfolio</a></li>
+  <li><a id="nav-about" href="#/about.htm">About</a></li>
+  <li><a id="nav-contact" href="#/contact.htm">Contact</a></li>
+</ul>
+
+</body>
+</html>

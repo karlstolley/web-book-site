@@ -1,0 +1,11 @@
+/*
+  Edge CSS - Some CSS3 things I just had to add; because of the
+  vendor prefixes, this will not validate, although the validator
+  is being changed so that it will throw a warning in the future;
+  see 
+*/
+div#promo .feature {
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border-radius: 10px;
+}

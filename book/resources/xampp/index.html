@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="sustainablewebdesign-com-book">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>XAMPP: How to Design and Write Web Pages Today</title>
+
+  <link rel="stylesheet" type="text/css" media="screen, print" href="/book/css/reset.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/book/css/screen.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/book/css/edge.css" />
+  <!--[if lte IE 7>
+  <link rel="stylesheet" type="text/css" media="screen" href="/book/css/screen-ie.css" />
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" media="print" href="/book/css/print.css" />
+
+  <meta name="description" content="Instructions for setting up a local web server for development, using XAMPP" />
+
+  <link rel="image_src" href="https://sustainablewebdesign.com/book/media/img/share-thumbnail.png" />
+
+<!--REMOVE COMMENT TAGS TO USE FAVICON LINKS:-->
+
+  <!--For most browsers:-->
+  <link rel="icon" href="https://sustainablewebdesign.com/book/favicon.png" type="image/png" />
+
+  <!--For Internet Explorer:-->
+  <link rel="shortcut icon" href="https://sustainablewebdesign.com/book/favicon.ico" />
+
+  <!--Load the Google Prettify library-->
+  <script type="text/javascript" src="/book/js/prettify.js"></script>
+  <!--Load the jQuery library-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+  <!--Load site-wide JavaScript-->
+  <script type="text/javascript" src="/book/js/site.js"></script>  <!--Page-specific JavaScript, e.g., for use with SWFObject-->
+  <script type="text/javascript">
+  /*Page-specific JavaScript*/
+  
+  </script>
+
+</head>
+
+<body class="resources">
+<div id="header">
+  <h1><a href="https://sustainablewebdesign.com/book/" rel="home">How to Design
+    and Write Web Pages Today</a></h1>
+  <ul class="accessibility">
+    <li><a href="#navigation">Jump to Navigation</a></li>
+    <li><a href="#content">Jump to Content</a></li>
+  </ul>
+</div>
+<div id="page">  <div id="promo">
+    <div class="summary">
+      <h2>Setting up XAMPP</h2>
+      <p>
+        Web writing and design is best done with a simple Web server that runs on a USB drive or on
+        your computer.
+      </p>
+    </div>
+    <!--
+      <div class="feature">
+      </div>
+    -->
+  </div>
+
+  <div id="content">
+
+    <div id="main">
+      <h2>Setting up XAMPP: General Notes</h2>
+      <p>
+        Setting up <a href="http://www.apachefriends.org/">XAMPP</a> is not terribly difficult or
+        time-consuming. It lets you test your website at a special URL,
+        <code>http://localhost/</code>, that makes it possible to use root-relative paths, run PHP
+        scripts, and do other kinds of things your live website will do.
+      </p>
+      <p>
+        Windows instructions immediately follow; Mac users can <a href="#xampp-osx">jump right to
+        the OS X instructions.
+      </p>
+      <h3 id="xampp-windows">XAMPP Setup: Windows</h3>
+      <p>
+        These steps have been tested with XAMPP version 1.7.4 on a USB drive on Windows XP, Windows Vista, and Windows 7.
+        Please <a href="/book/contact/">contact the author</a> if you run into any problems so that
+        these instructions can be improved, if necessary.
+      </p>
+      <ol>
+        <li>
+          Download either the ZIP or the 7zip archive of XAMPP for Windows 
+          <a href="http://www.apachefriends.org/en/xampp-windows.html#641">from the XAMPP site</a>;
+          <strong>do not download the installer</strong>. The 7zip archive is smaller, so it
+          downloads faster; but it may take longer to unzip, up to 10 or 15 minutes, depending on
+          the speed of your computer.
+        </li>
+        <li>
+          Unzip the ZIP or 7zip archive; if you don’t have an unzipping utility, try 
+          <a href="http://www.7-zip.org/">7-Zip</a>.
+        </li>
+        <li>
+          Copy the unzipped <code>xampp</code> folder to the root of your USB drive (in other words,
+          don’t place it inside of another folder). If your unzipping program has created a folder
+          that has <code>xampp</code> inside of it (e.g., some unzipping programs will create a
+          folder like <code>xampp-win32-1.7.4-VC6/</code>), move just the <code>xampp</code> folder
+          to the root of your drive. Depending on the speed of your USB drive, that, too, make take
+          a little while, too (15 or 20 minutes).
+          <div class="screenshot">
+            <img src="/book/media/img/xampp-folder.png" width="400" height="300" alt="Screenshot showing xampp folder in the root of a USB drive" />
+            <p>
+              Windows XP screenshot of the <code>xampp</code> folder in its proper place: in the
+              root of a USB drive (in this case, the USB drive’s letter is F:).
+            </p>
+          </div>
+        </li>
+        <li>
+          Load XAMPP by double-clicking on the <code>xampp</code> folder and finding and then
+          double-clicking the <code>xampp-control.exe</code> file. (If you don’t see the
+          <code>.exe</code> extension, the file will still work—but you should Google for <em>show
+          file extensions</em> and the name of your operating system (Windows 7, Windows Vista,
+          Windows XP; see pages 45-47 in the book).
+        </li>
+        <li>
+          Start the Apache web server by clicking the Start button on the XAMPP Control Panel.
+          Windows Vista and Windows 7 users may get a warning about Windows Firewall; click Cancel
+          on any firewall warning windows that pop up.
+          <div class="screenshot">
+            <img src="/book/media/img/xampp-control-panel.png" width="446" height="352" alt="Screenshot showing the XAMPP control panel and Apache running" />
+            <p>
+              Windows XP screenshot of the XAMPP Control Panel with the Apache web server running.
+            </p>
+          </div>
+        </li>
+        <li>
+          Test that XAMPP is running properly by going to the URL <code>http://localhost/</code> in
+          your browser (type the whole thing, including the <code>http://</code> part; notice
+          there’s no www. or .com). You should see the XAMPP welcome screen if all is working
+          correctly.
+          <div class="screenshot">
+           <img src="/book/media/img/xampp-splash.png" width="400" height="300" alt="Screenshot showing the XAMPP splash screen" />
+          <p>Windows XP screenshot of the XAMPP splash screen in Firefox.</p>
+          </div>
+        </li>
+        <li>
+          Some users may get an error from XAMPP that states another service is using Port 80
+          (Skype, for example, is known to use that port.) <strong>If everything is working for you,
+          skip to the next step</strong>. If you get an error like that, use your text editor (like
+          <a href="http://notepad-plus-plus.org/">Notepad++</a>) to open up the
+          <code>httpd.conf</code> file. Go to the <code>xampp</code> folder, then into the
+          <code>apache</code> folder, and finally into the <code>conf</code> folder, where you will
+          find the the <code>httpd.conf</code> file. Locate the line in the file that reads
+          <code>Listen 80</code> using the Find function in your text editor. Around line 37, you
+          will find a block of text that looks like:
+          <pre class="term">#
+# Listen: Allows you to bind Apache to specific IP addresses and/or
+# ports, instead of the default. See also the &lt;VirtualHost&gt;
+# directive.
+#
+# Change this to Listen on specific IP addresses as shown below to 
+# prevent Apache from glomming onto all bound IP addresses.
+#
+#Listen 0.0.0.0:80
+#Listen [::]:80
+Listen 80
+
+</pre>
+          Comment out the line that reads <code>Listen 80</code> by putting a hash (<code>#</code>)
+          in front of it; below that line, write your own line that reads <code>Listen 8000</code>.
+          This part of your file will now look like:
+          <pre class="term">#
+# Listen: Allows you to bind Apache to specific IP addresses and/or
+# ports, instead of the default. See also the &lt;VirtualHost&gt;
+# directive.
+#
+# Change this to Listen on specific IP addresses as shown below to 
+# prevent Apache from glomming onto all bound IP addresses.
+#
+#Listen 0.0.0.0:80
+#Listen [::]:80
+#Listen 80
+<strong>Listen 8000</strong>
+
+</pre>
+          Start or stop and start Apache from the XAMPP Control Panel. Point your browser to
+          <code>http://localhost:8000/</code>, and you should see the XAMPP welcome screen. Remember
+          to use <code>http://localhost:8000/</code> instead of <code>http://localhost/</code> when
+          you’re developing your site.
+        </li>
+        <li>
+          To develop your own site, you’ll want to rename the existing <code>htdocs</code> folder
+          inside of the <code>xampp</code> folder to <code>htdocs-original</code>. (You can rename
+          it back if you need, for example, to configure the MySQL database for use with WordPress
+          development.) Then create your own new <code>htdocs</code> folder for your site, or
+          download, unzip, and copy over the <code>htdocs</code> folder from the <a
+          href="/book/rpk/">Rapid Prototyping Kit</a> and get to work on your site. (You might want
+          to stop and restart Apache in the XAMPP Control Panel before you start working.)
+        </li>
+      </ol>
+
+      <h3 id="xampp-osx">XAMPP Setup: Mac OS X</h3>
+      <p>
+        Unfortunately, the OS X version of XAMPP will not run on a USB drive; you must have
+        administrative rights on any Mac that you wish to install and run XAMPP on. These
+        instructions have been tested on OS X Leopard and OS X Snow Leopard using XAMPP version
+        1.7.3. Please <a href="/book/contact/">contact the author</a> if you run into any problems
+        so that these instructions can be improved, if necessary.
+      </p>
+      <ol>
+        <li>
+          Download XAMPP for Mac OS X (Universal Binary) <a
+          href="http://www.apachefriends.org/en/xampp-macosx.html#849">from the XAMPP site</a>.
+          Double-click the installer, and drag the XAMPP folder to your Applications folder. (You
+          may have to enter your adminstrative username and/or password).
+        </li>
+        <li>
+          Find the XAMPP Control application, which will be in an <code>XAMPP</code> folder inside
+          of your <code>Applications</code> folder. Double-click the XAMPP Control application to
+          launch.
+        </li>
+        <li>
+          A little Control window will pop up; click the Start button next to Apache. You will be
+          prompted to enter your administrative username and/or password.
+          <div class="screenshot">
+            <img src="/book/media/img/xampp-control-mac.png" width="205" height="138" alt="Screenshot Mac OS X XAMPP Control window" />
+            <p>
+              Mac OS X screenshot of the XAMPP Control window, with Apache running.
+            </p>
+          </div>
+        </li>
+        <li>
+          Open your browser to <code>http://localhost/</code>; you should see the XAMPP splash page.
+          If you are getting an error about another service using Port 80, see <a
+          href="#xampp-mac-error">the end of this document</a>.
+        </li>
+        <li>
+          Now things get a little complex. The <code>Applications</code> folder on a Mac is a
+          restricted area of sorts, so it’s important to configure XAMPP to read from an
+          <code>htdocs</code> folder than you can write to from your user account easily.
+        </li>
+        <li>
+          Go to your home folder in a Finder window; Look for the little house icon with your
+          username next to it, and click on it.
+        </li>
+        <li>
+          In the Finder window, create a new <code>htdocs</code> folder (File &gt; New Folder from
+          the Finder menu). Or, download and unzip the <a href="/book/rpk/">Rapid Prototyping
+          Kit</a> (RPK) and copy its <code>htdocs</code> folder to your home folder.
+        </li>
+        <li>
+          In your favorite text editor (like 
+          <a href="http://www.barebones.com/products/textwrangler/">TextWrangler</a>), create a new
+          text file and put a little line of text in it, like:
+          <pre>Hello there! This is just to test XAMPP.</pre>
+          Save the file as <code>hello.txt</code>, inside of the <code>htdocs</code> folder you
+          created or moved over from the RPK. The <code>hello.txt</code> will be for testing your
+          new XAMPP configuration.
+        </li>
+        <li>
+          Now use your text editor to open the XAMPP <code>httpd.conf</code> file. This contains the
+          Apache Web server configuration that XAMPP uses. Go to the <code>Applications</code>
+          folder, then <code>XAMPP</code>, then <code>etc</code>; you'll see <code>httpd.conf</code>
+          listed there. Open it.
+        </li>
+        <li>
+          Once you’ve opened the <code>httpd.conf</code> file, you should immediately make a copy of
+          it, just in case you make a mistake. Choose File &gt; Save As... in your editor, and save
+          the file as <code>httpd.conf.original</code>. You will probably be prompted for your
+          administrative username and password.
+        </li>
+        <li>
+          Then, choose File &gt; Save As... <em>again</em> and save as <code>httpd.conf</code>, so
+          that you’re back to editing the <code>httpd.conf</code> that XAMPP reads (and not the
+          <code>httpd.conf.original</code> file that you can use in an emergency).
+        </li>
+        <li>
+          Now to edit the <code>httpd.conf</code> file. Use the Find function in TextWrangler
+          (Search &gt; Find...) and search for the text <code>DocumentRoot</code> (one word, no
+          space). TextWrangler should take you to around line 174 of the <code>httpd.conf</code>
+          file, where you will see:
+          <pre class="term">#
+# DocumentRoot: The directory out of which you will serve your
+# documents. By default, all requests are taken from this directory, but
+# symbolic links and aliases may be used to point to other locations.
+#
+DocumentRoot "/Applications/XAMPP/xamppfiles/htdocs"
+
+#</pre>
+        </li>
+        <li>
+          Comment out the <code>DocumentRoot</code> line that’s there by putting a hash
+          (<code>#</code>) in front of it. Then, on the line below the one you comment out, write a
+          new DocumentRoot line, replacing <code>yourusername</code> as in the example below with
+          your real username on your Mac. The DocumentRoot part of your file should now look like
+          this:
+          <pre class="term"># DocumentRoot: The directory out of which you will serve your
+# documents. By default, all requests are taken from this directory, but
+# symbolic links and aliases may be used to point to other locations.
+#
+# DocumentRoot "/Applications/XAMPP/xamppfiles/htdocs"
+DocumentRoot "/Users/<strong>yourusername</strong>/htdocs"
+
+#</pre>
+        </li>
+        <li>
+          Next, scroll down a little further (about 30 lines) in the <code>httpd.conf</code>, where
+          you will see:
+          <pre class="term">#
+# This should be changed to whatever you set DocumentRoot to.
+#
+&lt;Directory "/Applications/XAMPP/xamppfiles/htdocs"&gt;
+    #
+    # Possible values for the Options directive are "None", "All",
+    # or any combination of:
+    #   Indexes Includes FollowSymLinks SymLinksifOwnerMatch ExecCGI MultiViews
+    #
+    # Note that "MultiViews" must be named *explicitly* --- "Options All"
+    # doesn't give it to you.
+    #
+
+</pre>
+        </li>
+        <li>
+          As you did with the DocumentRoot line, you’ll comment out the 
+          <code>&lt;Directory ...</code> line by inserting a hash (<code>#</code>) in front of it.
+          Start a new line below it, following the pattern of the line you commented out, and write
+          the same path you did in the DocumentRoot line above. This part of your file should now
+          look like:
+          <pre class="term">#
+# This should be changed to whatever you set DocumentRoot to.
+#
+# &lt;Directory "/Applications/XAMPP/xamppfiles/htdocs"&gt;
+&lt;Directory "/Users/<strong>yourusername</strong>/htdocs"&gt;
+    #
+    # Possible values for the Options directive are "None", "All",
+    # or any combination of:
+    #   Indexes Includes FollowSymLinks SymLinksifOwnerMatch ExecCGI MultiViews
+    #
+    # Note that "MultiViews" must be named *explicitly* --- "Options All"
+    # doesn't give it to you.
+    #
+
+</pre>
+        </li>
+        <li>
+          Save the file as <code>httpd.conf</code>; you might have to enter your administrative
+          username and password again.
+        </li>
+        <li>
+          Now the moment of truth: if you left XAMPP running, stop and then start it again from the
+          XAMPP Control window. Point your browser to <code>http://localhost/hello.txt</code>, the
+          text file you created; you should see your simple “Hello there! This is just to test
+          XAMPP.” message. If you do, go ahead and delete the <code>hello.txt</code> file. You are
+          now ready to start building your site, and testing it on a local web server.
+        </li>
+      </ol>
+      <p id="xampp-mac-error">
+        Some users may get an error from XAMPP that states another service is using Port 80 (Skype,
+        for example, is known to use that port.) If you get an error like that, open up the
+        <code>httpd.conf</code> file, and search for <code>Listen 80</code> using the find function.
+        Around line 30, you will find a block of text that looks like:
+      </p>
+      <pre class="term">#
+# Listen: Allows you to bind Apache to specific IP addresses and/or
+# ports, instead of the default. See also the &lt;VirtualHost&gt;
+# directive.
+#
+# Change this to Listen on specific IP addresses as shown below to 
+# prevent Apache from glomming onto all bound IP addresses.
+#
+#Listen 12.34.56.78:80
+Listen 80
+
+</pre>
+      <p>
+        Comment out the line that reads <code>Listen 80</code> by putting a hash (<code>#</code>) in
+        front of it; below that line, write your own line that reads <code>Listen 8000</code>. This
+        part of your file will now look like:
+      </p>
+      <pre class="term">#
+# Listen: Allows you to bind Apache to specific IP addresses and/or
+# ports, instead of the default. See also the &lt;VirtualHost&gt;
+# directive.
+#
+# Change this to Listen on specific IP addresses as shown below to 
+# prevent Apache from glomming onto all bound IP addresses.
+#
+#Listen 12.34.56.78:80
+#Listen 80
+<strong>Listen 8000</strong>
+
+</pre>
+      <p>
+        Start or stop and start XAMPP from its little Control window. Point your browser to
+        <code>http://localhost:8000/hello.txt</code>, and you should see your see your simple “Hello
+        there! This is just to test XAMPP.” message. If you do, go ahead and delete the
+        <code>hello.txt</code> file. Remember to use <code>http://localhost:8000/</code> instead of
+        <code>http://localhost/</code> when you’re developing your site.
+      </p>
+      
+    </div>
+
+    <!--<div id="supporting">
+    </div>-->
+
+  </div>
+
+<!--Close #page-->
+</div>
+<div class="nav">
+  <ul id="navigation">
+    <li id="nav-home"><a href="/book/" title="Companion site overview">Home</a></li>
+    <li id="nav-rpk"><a href="/book/rpk/" title="Rapid Prototyping Kit downloads">RPK</a></li>
+    <li id="nav-examples"><a href="/book/examples/" title="Examples from the book">Examples</a></li>
+    <li id="nav-resources"><a href="/book/resources/" title="Additional resources and reference material">Resources</a></li>
+    <li id="nav-updates"><a href="/book/updates/" title="Updates and corrections to the book">Updates</a></li>
+    <li id="nav-contact"><a href="/book/contact/" title="Get in touch with the author">Contact</a></li>
+  </ul>
+</div>
+
+  <div id="footer">
+    <div id="book">
+      <h2>About the Book</h2>
+      <img src="/book/media/img/book-thumb.png" height="315" width="232" alt="Cover of How to Design and Write Web Pages Today" />
+      <p><em>From the publisher, Greenwood Press</em>: An introduction to standards-based Web design, this book treats creating a website from the point of view of the writer, focusing on writing concerns and how they fit with the technological challenges of the Web. Readers will learn about the reasons for writing on the Web; the challenges of writing there; and the solid, but flexible construction of individual pages. The focus is on building websites that can grow, including sites built around the popular, open-source WordPress blogging system. Rich with examples, the book demonstrates that Web writing and design can be fast and fun—and accomplished without expensive software or sophisticated programming skills.</p>
+    </div>
+    <div id="siteinfo">
+      <p class="credits">
+        Site content and design by <a href="http://karlstolley.com/">Karl Stolley</a>. Licensed for   use under
+        <a href="http://creativecommons.org/licenses/by/3.0/" rel="license">Creative Commons</a>.
+      </p>
+      <ul class="validators">
+        <li><a href="http://validator.w3.org/check?uri=referer"
+          title="Validate this page’s XHTML">XHTML</a></li>
+        <li><a href="http://jigsaw.w3.org/css-validator/check/referer"
+          title="Validate this page’s CSS">CSS</a></li>
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22113980-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+</body>
+</html>
